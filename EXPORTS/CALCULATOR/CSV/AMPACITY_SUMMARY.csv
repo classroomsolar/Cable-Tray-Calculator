@@ -1,0 +1,13 @@
+﻿05 — AMPACITY RELEASE SUMMARY,,,,,
+,,,,,
+Metric,Value,Status,Meaning,Engine / Source,Action
+Included power circuits,3,INFO,Power rows requiring ampacity validation,AMPACITY_ENGINE,
+PASS circuits,3,PASS,Governing allowable >= required current,AMPACITY_ENGINE,
+FAIL circuits,0,PASS,Governing allowable < required current or hard electrical failure,AMPACITY_ENGINE,Correct cable / circuit design.
+INPUT REQUIRED circuits,0,PASS,"Required current, exact NEC lookup, or mandatory MV bonding input missing",AMPACITY_ENGINE,Provide only the missing electrical fact.
+REVIEW REQUIRED circuits,0,PASS,Code/configuration or source condition requires engineering review,AMPACITY_ENGINE,Review the affected route/condition.
+Minimum governing allowable,621.5602204873697,INFO,Lowest valid governing ampacity,AMPACITY_ENGINE,
+Maximum utilization,0.630992761558121,INFO,Highest required-current / governing-ampacity ratio,AMPACITY_ENGINE,
+Manufacturer/source governs rows,0,INFO,Valid published product source lower than NEC,AMPACITY_ENGINE,
+NEC-only governing rows,3,INFO,NEC governs or manufacturer basis is not applicable,AMPACITY_ENGINE,
+AMPACITY RELEASE,PASS,PASS,FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS,AMPACITY_ENGINE,

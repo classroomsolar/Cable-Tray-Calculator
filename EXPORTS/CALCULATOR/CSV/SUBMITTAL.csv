@@ -1,0 +1,28 @@
+﻿v2 SUBMITTAL / PROCUREMENT HANDOFF,,,,,,,
+Creates a controlled bridge from calculator selection to manufacturer documentation. The workbook does not embed proprietary drawings; it records exact source URLs and the manufacturer tools used to assemble submittals/CAD/BIM/takeoffs.,,,,,,,
+,,,,,,,
+Selected System Item,Current Value,Document / Source State,Action,,Manufacturer / Tool,Use,URL
+Manufacturer,Eaton B-Line,INFO,Confirm project-approved manufacturer / equal requirements.,,Eaton B-Line Submittal Builder,Assemble selected cable tray submittal PDFs,https://www.eaton.com/us/en-us/products/support-systems/submittal-builder.html
+Straight Tray Model,46ASB-36-240,INFO,Use exact selected model for product sheet/submittal lookup.,,Eaton CoSPEC,CAD / BIM / PDMS / product design content,https://www.eaton.com/us/en-us/products/support-systems/b-line-series-cospec-specifier-center/cable-tray-systems-and-supports-cable-management.html
+Product Source URL,https://www.eaton.com/content/dam/eaton/products/support-systems/cable-management/series-1-2-3-4-5-aluminum-steel-cable-tray-section-cable-management-catalog.pdf,PASS,Open the exact source page; do not substitute a similar SKU.,,Eaton Cable Tray Tools,"NEC sizing, structural-steel savings, weight tools",https://www.eaton.com/us/en-us/products/support-systems/b-line-series-software-and-resources.html
+Series / Family,Series 46,INFO,Use family only for navigation; exact SKU governs.,,Legrand Cablofil Builder,Takeoff / splices / supports / accessories / submittal project workflow,https://submittalbuilder.legrand.us/
+Certifications,NEMA VE 1 / UL classified family,INFO,Confirm current project submittal/certification requirements.,,MP Husky Cable Tray RFQ,Quote checklist / alternate-manufacturer procurement input,https://mphusky.com/quotations/cable-tray-quote/
+BOM Release,REVIEW REQUIRED,REVIEW REQUIRED,Resolve BOM REVIEW/INPUT REQUIRED items before purchasing.,,FillSizer,Independent project route/schedule benchmark; not a compliance source,https://fillsizer.com/
+Submittal Handoff Release,REVIEW REQUIRED,REVIEW REQUIRED,PASS means documentation path exists; procurement still requires project approval.,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,

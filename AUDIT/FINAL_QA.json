@@ -1,0 +1,16 @@
+{
+  "calculatorFile": "Cable_Tray_Calculator_MAIN.xlsx",
+  "calculatorSHA256": "88a16492e7bd207b8c263de312ac4943b0b4c6d36f0f0cf3160a1d054d35e7e3",
+  "databaseFile": "Cable_Tray_Database.xlsx",
+  "databaseSHA256": "07c8ea55f1b46c2e544293d0852226a5bc1c78145a7f0453c6648d818150fe68",
+  "sourcePolicy": "All exports in this package were freshly generated from the two exact latest XLSX files above. No older calculator/database workbook was used.",
+  "verifiedStateFromLatestAudit": {
+    "engineeringCalculationRelease": "PASS",
+    "failGates": 0,
+    "inputRequiredGates": 0,
+    "formulaErrorCells": 0,
+    "atFormulas": 0,
+    "dropdownsPreserved": true,
+    "procurementIFCStatus": "REVIEW REQUIRED / PROJECT APPROVALS OPEN"
+  }
+}

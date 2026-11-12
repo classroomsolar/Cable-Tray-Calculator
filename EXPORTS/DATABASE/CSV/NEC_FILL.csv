@@ -1,0 +1,28 @@
+﻿REFERENCE — NEC TRAY FILL / WIDTH TABLES,,,,,,,,,,,,,
+Values are carried from the source-closed NEC 2020/2023 rule tables. Editions remain separately identified even where represented numeric values are identical.,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Edition,Inside Width in,MC Ladder/Vented in²,MC Solid Bottom in²,SC 250-900 in²,Source,Verification,Commercial Ladder Width?,,Edition,Channel Width,Ventilated One MC,Ventilated >1 MC,Solid >1 MC
+2020,2,2.5,2,2,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,2020,3,2.3,1.3,1.1
+2020,4,4.5,3.5,4.5,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,2020,4,4.5,2.5,2.1
+2020,6,7,5.5,6.5,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,2020,6,7,3.8,3.2
+2020,8,9.5,7,8.5,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,2023,3,2.3,1.3,1.1
+2020,9,10.5,8,9.5,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,2023,4,4.5,2.5,2.1
+2020,12,14,11,13,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,2023,6,7,3.8,3.2
+2020,16,18.5,14.5,17.5,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,,,,,
+2020,18,21,16.5,19.5,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2020,20,23.5,18.5,21.5,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,,,,,
+2020,24,28,22,26,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2020,30,35,27.5,32.5,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2020,36,42,33,39,NFPA 70 (2020) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2023,2,2.5,2,2,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,,,,,
+2023,4,4.5,3.5,4.5,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,,,,,
+2023,6,7,5.5,6.5,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2023,8,9.5,7,8.5,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,,,,,
+2023,9,10.5,8,9.5,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2023,12,14,11,13,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2023,16,18.5,14.5,17.5,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,,,,,
+2023,18,21,16.5,19.5,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2023,20,23.5,18.5,21.5,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,No,,,,,,
+2023,24,28,22,26,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2023,30,35,27.5,32.5,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,
+2023,36,42,33,39,NFPA 70 (2023) Article 392.22 fill table,NORMATIVE_CODE_VERIFIED,Yes,,,,,,

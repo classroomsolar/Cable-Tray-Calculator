@@ -1,0 +1,12 @@
+﻿06 — CABLE INTELLIGENCE SUMMARY,,,,,
+,,,,,
+Metric,Value,Status,Meaning,Source,Action
+Included circuits,8,INFO,Circuits marked Yes,,
+PASS circuits,3,INFO,Cable identity/source/physical data resolved,,
+INPUT REQUIRED circuits,0,PASS,Missing/ambiguous identity or required data,,Resolve only the missing discriminator/source.
+REVIEW REQUIRED circuits,5,REVIEW REQUIRED,Conditional/weak source state,,Engineer/source review.
+FAIL circuits,0,PASS,Invalid part/duplicate/voltage failure,,Correct before tray design.
+Total cable load,22.811359999999997,INFO,Resolved cable weight × physical quantity,CABLE_ENGINE,
+Largest verified bend radius,23.4,INFO,Largest included verified minimum bend radius,CABLE_ENGINE,Blank means source data required later.
+Cleat-applicable circuits,3,INFO,Single-conductor power rows requiring restraint calculation,CABLE_ENGINE,Feeds Step 10.
+STEP 2 RELEASE,REVIEW REQUIRED,REVIEW REQUIRED,FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS,CABLE_ENGINE,

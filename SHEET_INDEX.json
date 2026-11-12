@@ -1,0 +1,822 @@
+[
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "START",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 72,
+    "MaxCol": 10,
+    "CSV": "EXPORTS/CALCULATOR/CSV/START.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/START__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "INPUTS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 77,
+    "MaxCol": 35,
+    "CSV": "EXPORTS/CALCULATOR/CSV/INPUTS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/INPUTS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "RESULTS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 92,
+    "MaxCol": 8,
+    "CSV": "EXPORTS/CALCULATOR/CSV/RESULTS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/RESULTS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "BOM",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 105,
+    "MaxCol": 12,
+    "CSV": "EXPORTS/CALCULATOR/CSV/BOM.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/BOM__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "REPORT",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 177,
+    "MaxCol": 8,
+    "CSV": "EXPORTS/CALCULATOR/CSV/REPORT.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/REPORT__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "ISSUES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 48,
+    "MaxCol": 12,
+    "CSV": "EXPORTS/CALCULATOR/CSV/ISSUES.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/ISSUES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "FIELD_REVIEW",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 35,
+    "MaxCol": 8,
+    "CSV": "EXPORTS/CALCULATOR/CSV/FIELD_REVIEW.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/FIELD_REVIEW__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CABLE_IMPORT",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 52,
+    "MaxCol": 49,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CABLE_IMPORT.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CABLE_IMPORT__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "ROUTES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 80,
+    "MaxCol": 22,
+    "CSV": "EXPORTS/CALCULATOR/CSV/ROUTES.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/ROUTES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "ROUTE_MAP",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 50,
+    "MaxCol": 20,
+    "CSV": "EXPORTS/CALCULATOR/CSV/ROUTE_MAP.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/ROUTE_MAP__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CROSS_SECTION",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 63,
+    "MaxCol": 12,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CROSS_SECTION.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CROSS_SECTION__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "SUPPORT_RACK",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 38,
+    "MaxCol": 16,
+    "CSV": "EXPORTS/CALCULATOR/CSV/SUPPORT_RACK.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/SUPPORT_RACK__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "VOLTAGE_DROP",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 55,
+    "MaxCol": 95,
+    "CSV": "EXPORTS/CALCULATOR/CSV/VOLTAGE_DROP.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/VOLTAGE_DROP__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "SC_THERMAL",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 55,
+    "MaxCol": 20,
+    "CSV": "EXPORTS/CALCULATOR/CSV/SC_THERMAL.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/SC_THERMAL__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "PULL_PLAN",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 58,
+    "MaxCol": 24,
+    "CSV": "EXPORTS/CALCULATOR/CSV/PULL_PLAN.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/PULL_PLAN__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "OPTIMIZER",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 31,
+    "MaxCol": 20,
+    "CSV": "EXPORTS/CALCULATOR/CSV/OPTIMIZER.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/OPTIMIZER__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "SUBMITTAL",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 28,
+    "MaxCol": 8,
+    "CSV": "EXPORTS/CALCULATOR/CSV/SUBMITTAL.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/SUBMITTAL__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "QA_RELEASE",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 72,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/QA_RELEASE.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/QA_RELEASE__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CABLE_SUMMARY",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 12,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CABLE_SUMMARY.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CABLE_SUMMARY__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "AMPACITY_SUMMARY",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 13,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/AMPACITY_SUMMARY.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/AMPACITY_SUMMARY__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "TRAY_TYPE",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 14,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/TRAY_TYPE.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/TRAY_TYPE__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "FILL_WIDTH",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 35,
+    "MaxCol": 15,
+    "CSV": "EXPORTS/CALCULATOR/CSV/FILL_WIDTH.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/FILL_WIDTH__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "MATERIAL",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 15,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/MATERIAL.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/MATERIAL__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "PRODUCT_SELECT",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 70,
+    "MaxCol": 27,
+    "CSV": "EXPORTS/CALCULATOR/CSV/PRODUCT_SELECT.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/PRODUCT_SELECT__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "BENDS_FITTINGS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 17,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/BENDS_FITTINGS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/BENDS_FITTINGS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "ROUTE_FITTINGS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 31,
+    "MaxCol": 12,
+    "CSV": "EXPORTS/CALCULATOR/CSV/ROUTE_FITTINGS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/ROUTE_FITTINGS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "EXPANSION_SUPPORTS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 23,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/EXPANSION_SUPPORTS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/EXPANSION_SUPPORTS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CLEAT_SUMMARY",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 14,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CLEAT_SUMMARY.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CLEAT_SUMMARY__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "GROUNDING",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 52,
+    "MaxCol": 10,
+    "CSV": "EXPORTS/CALCULATOR/CSV/GROUNDING.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/GROUNDING__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CABLE_ENGINE",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 44,
+    "MaxCol": 65,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CABLE_ENGINE.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CABLE_ENGINE__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "AMPACITY_ENGINE",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 44,
+    "MaxCol": 55,
+    "CSV": "EXPORTS/CALCULATOR/CSV/AMPACITY_ENGINE.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/AMPACITY_ENGINE__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CLEAT_ENGINE",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 44,
+    "MaxCol": 36,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CLEAT_ENGINE.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CLEAT_ENGINE__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "ROUTE_DETAIL",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 324,
+    "MaxCol": 12,
+    "CSV": "EXPORTS/CALCULATOR/CSV/ROUTE_DETAIL.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/ROUTE_DETAIL__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "ACTIVE_CIRCUITS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 44,
+    "MaxCol": 21,
+    "CSV": "EXPORTS/CALCULATOR/CSV/ACTIVE_CIRCUITS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/ACTIVE_CIRCUITS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CABLE_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 43,
+    "MaxCol": 39,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CABLE_DB.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CABLE_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "TRAY_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 39,
+    "MaxCol": 24,
+    "CSV": "EXPORTS/CALCULATOR/CSV/TRAY_DB.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/TRAY_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "NEC_FILL",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 28,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/CALCULATOR/CSV/NEC_FILL.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/NEC_FILL__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "NEC_AMPACITY_2020",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 1525,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/CALCULATOR/CSV/NEC_AMPACITY_2020.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/NEC_AMPACITY_2020__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "NEC_AMPACITY_2023",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 1525,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/CALCULATOR/CSV/NEC_AMPACITY_2023.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/NEC_AMPACITY_2023__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "AMPACITY_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 31,
+    "MaxCol": 27,
+    "CSV": "EXPORTS/CALCULATOR/CSV/AMPACITY_RULES.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/AMPACITY_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "SIZE_MAP",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 31,
+    "MaxCol": 3,
+    "CSV": "EXPORTS/CALCULATOR/CSV/SIZE_MAP.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/SIZE_MAP__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "SC_K_FACTORS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 9,
+    "MaxCol": 5,
+    "CSV": "EXPORTS/CALCULATOR/CSV/SC_K_FACTORS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/SC_K_FACTORS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "EXPANSION_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 17,
+    "MaxCol": 5,
+    "CSV": "EXPORTS/CALCULATOR/CSV/EXPANSION_RULES.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/EXPANSION_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CLEAT_FAMILY_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 8,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CLEAT_FAMILY_DB.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CLEAT_FAMILY_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CLEAT_SIZE_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 103,
+    "MaxCol": 7,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CLEAT_SIZE_DB.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CLEAT_SIZE_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CLEAT_SIZE_MAP",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 591,
+    "MaxCol": 4,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CLEAT_SIZE_MAP.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CLEAT_SIZE_MAP__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "GROUNDING_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 31,
+    "MaxCol": 24,
+    "CSV": "EXPORTS/CALCULATOR/CSV/GROUNDING_RULES.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/GROUNDING_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "ACCESSORY_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 56,
+    "MaxCol": 9,
+    "CSV": "EXPORTS/CALCULATOR/CSV/ACCESSORY_RULES.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/ACCESSORY_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "SOURCES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 854,
+    "MaxCol": 5,
+    "CSV": "EXPORTS/CALCULATOR/CSV/SOURCES.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/SOURCES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "DV_LISTS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 60,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/CALCULATOR/CSV/DV_LISTS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/DV_LISTS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "ENGINEERING_DEFAULTS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 20,
+    "MaxCol": 7,
+    "CSV": "EXPORTS/CALCULATOR/CSV/ENGINEERING_DEFAULTS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/ENGINEERING_DEFAULTS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "EASY_INPUT",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 91,
+    "MaxCol": 18,
+    "CSV": "EXPORTS/CALCULATOR/CSV/EASY_INPUT.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/EASY_INPUT__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CABLE_PLANNING_DEFAULTS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 14,
+    "MaxCol": 17,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CABLE_PLANNING_DEFAULTS.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CABLE_PLANNING_DEFAULTS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "EQUIPMENT_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 63,
+    "MaxCol": 17,
+    "CSV": "EXPORTS/CALCULATOR/CSV/EQUIPMENT_DB.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/EQUIPMENT_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "STRUCTURAL_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 15,
+    "MaxCol": 8,
+    "CSV": "EXPORTS/CALCULATOR/CSV/STRUCTURAL_RULES.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/STRUCTURAL_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "STRUCTURAL_LOADING",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 30,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/STRUCTURAL_LOADING.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/STRUCTURAL_LOADING__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "FITTING_FILL",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 24,
+    "MaxCol": 12,
+    "CSV": "EXPORTS/CALCULATOR/CSV/FITTING_FILL.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/FITTING_FILL__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "LAYOUT_ENGINE",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 24,
+    "MaxCol": 37,
+    "CSV": "EXPORTS/CALCULATOR/CSV/LAYOUT_ENGINE.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/LAYOUT_ENGINE__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "TRAY_SCHEDULE",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 30,
+    "MaxCol": 10,
+    "CSV": "EXPORTS/CALCULATOR/CSV/TRAY_SCHEDULE.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/TRAY_SCHEDULE__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "CODE_CHECK_REPORT",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 32,
+    "MaxCol": 8,
+    "CSV": "EXPORTS/CALCULATOR/CSV/CODE_CHECK_REPORT.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/CODE_CHECK_REPORT__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Calculator_MAIN",
+    "Sheet": "FEATURE_MATRIX",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 38,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/CALCULATOR/CSV/FEATURE_MATRIX.csv",
+    "FormulaJSON": "EXPORTS/CALCULATOR/CSV/FEATURE_MATRIX__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "CABLE_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 43,
+    "MaxCol": 39,
+    "CSV": "EXPORTS/DATABASE/CSV/CABLE_DB.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/CABLE_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "TRAY_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 39,
+    "MaxCol": 25,
+    "CSV": "EXPORTS/DATABASE/CSV/TRAY_DB.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/TRAY_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "EQUIPMENT_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 63,
+    "MaxCol": 17,
+    "CSV": "EXPORTS/DATABASE/CSV/EQUIPMENT_DB.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/EQUIPMENT_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "NEC_FILL",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 28,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/DATABASE/CSV/NEC_FILL.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/NEC_FILL__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "NEC_AMPACITY_2020",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 1525,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/DATABASE/CSV/NEC_AMPACITY_2020.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/NEC_AMPACITY_2020__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "NEC_AMPACITY_2023",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 1525,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/DATABASE/CSV/NEC_AMPACITY_2023.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/NEC_AMPACITY_2023__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "AMPACITY_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 31,
+    "MaxCol": 27,
+    "CSV": "EXPORTS/DATABASE/CSV/AMPACITY_RULES.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/AMPACITY_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "SIZE_MAP",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 31,
+    "MaxCol": 3,
+    "CSV": "EXPORTS/DATABASE/CSV/SIZE_MAP.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/SIZE_MAP__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "SC_K_FACTORS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 9,
+    "MaxCol": 5,
+    "CSV": "EXPORTS/DATABASE/CSV/SC_K_FACTORS.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/SC_K_FACTORS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "EXPANSION_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 17,
+    "MaxCol": 5,
+    "CSV": "EXPORTS/DATABASE/CSV/EXPANSION_RULES.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/EXPANSION_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "CLEAT_FAMILY_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 8,
+    "MaxCol": 14,
+    "CSV": "EXPORTS/DATABASE/CSV/CLEAT_FAMILY_DB.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/CLEAT_FAMILY_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "CLEAT_SIZE_DB",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 103,
+    "MaxCol": 7,
+    "CSV": "EXPORTS/DATABASE/CSV/CLEAT_SIZE_DB.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/CLEAT_SIZE_DB__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "CLEAT_SIZE_MAP",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 591,
+    "MaxCol": 4,
+    "CSV": "EXPORTS/DATABASE/CSV/CLEAT_SIZE_MAP.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/CLEAT_SIZE_MAP__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "GROUNDING_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 31,
+    "MaxCol": 24,
+    "CSV": "EXPORTS/DATABASE/CSV/GROUNDING_RULES.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/GROUNDING_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "ACCESSORY_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 56,
+    "MaxCol": 9,
+    "CSV": "EXPORTS/DATABASE/CSV/ACCESSORY_RULES.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/ACCESSORY_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "ENGINEERING_DEFAULTS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 19,
+    "MaxCol": 7,
+    "CSV": "EXPORTS/DATABASE/CSV/ENGINEERING_DEFAULTS.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/ENGINEERING_DEFAULTS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "CABLE_PLANNING_DEFAULTS",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 14,
+    "MaxCol": 17,
+    "CSV": "EXPORTS/DATABASE/CSV/CABLE_PLANNING_DEFAULTS.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/CABLE_PLANNING_DEFAULTS__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "SOURCES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 854,
+    "MaxCol": 5,
+    "CSV": "EXPORTS/DATABASE/CSV/SOURCES.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/SOURCES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "DB_INDEX",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 23,
+    "MaxCol": 6,
+    "CSV": "EXPORTS/DATABASE/CSV/DB_INDEX.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/DB_INDEX__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "STRUCTURAL_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 15,
+    "MaxCol": 8,
+    "CSV": "EXPORTS/DATABASE/CSV/STRUCTURAL_RULES.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/STRUCTURAL_RULES__FORMULAS.json"
+  },
+  {
+    "Workbook": "Cable_Tray_Database",
+    "Sheet": "FITTING_RULES",
+    "State": "visible",
+    "UsedRange": null,
+    "MaxRow": 18,
+    "MaxCol": 9,
+    "CSV": "EXPORTS/DATABASE/CSV/FITTING_RULES.csv",
+    "FormulaJSON": "EXPORTS/DATABASE/CSV/FITTING_RULES__FORMULAS.json"
+  }
+]

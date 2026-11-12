@@ -1,0 +1,9 @@
+{
+  "B28": "COUNTIF($B$5:$B$24,\"No\")",
+  "C28": "IF(B28=0,\"PASS\",\"REVIEW REQUIRED\")",
+  "B29": "COUNTIF($B$5:$B$24,\"Unknown\")",
+  "C29": "IF(B29=0,\"PASS\",\"REVIEW REQUIRED\")",
+  "B30": "COUNTIF($B$5:$B$24,\"Yes\")",
+  "B31": "IF(OR(B28>0,B29>0),\"REVIEW REQUIRED\",\"PASS\")",
+  "C31": "B31"
+}

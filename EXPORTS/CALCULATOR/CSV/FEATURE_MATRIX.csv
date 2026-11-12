@@ -1,0 +1,38 @@
+﻿20 — CABLE TRAY CALCULATOR FEATURE COVERAGE MATRIX,,,,,
+Tracks the requested engineering functions and the production engine that performs each function. 'Implemented' does not mean a project-specific unknown is guessed; genuine project/vendor inputs remain review-gated.,,,,,
+,,,,,
+Requested Function,Implementation State,Primary Engine,Current Baseline State,Key Output / Boundary,Notes
+Tray fill — LV / MV / DC / AC,IMPLEMENTED,FILL_WIDTH / NEC_FILL,PASS,Edition-specific NEC + physical arrangement geometry,Voltage/system type routed through existing input/cable engines.
+Multiconductor / single-conductor logic,IMPLEMENTED,CABLE_ENGINE / FILL_WIDTH,REVIEW REQUIRED,Separate cable construction/fill branches,Exact cable construction retained in database.
+Trefoil / flat arrangements,IMPLEMENTED,CABLE_ENGINE / FILL_WIDTH / CLEAT_ENGINE,PASS,Trefoil/flat arrangement-aware geometry + restraint,Formation changes affect geometry and cleat logic.
+Spacing engine,IMPLEMENTED,FILL_WIDTH / LAYOUT_ENGINE,PASS,"Power group, EGC and fiber spacing zones",Project planning spacings remain source/engineering controlled.
+Barrier rules,IMPLEMENTED,GROUNDING / ACCESSORY_RULES,INFO,Barrier requirement + part + quantity,Full/partial-route limitations retained.
+Fiber segregation,IMPLEMENTED,GROUNDING / FILL_WIDTH / LAYOUT_ENGINE,INFO,Fiber zone + barrier/compatibility logic,Armored fiber remains separately source-approved.
+EGC placement / sizing,IMPLEMENTED,GROUNDING / GROUNDING_RULES / LAYOUT_ENGINE,PASS,Wire EGC sizing + physical zone,Tray-as-EGC remains separately qualified.
+Multiple circuits / parallel sets,IMPLEMENTED,ACTIVE_CIRCUITS / CABLE_ENGINE,PASS,Per-circuit physical quantity and grouping,Parallel-set validation retained.
+Tray width optimization,IMPLEMENTED,FILL_WIDTH / PRODUCT_SELECT,PASS,Engineering minimum + real commercial width,Project-selected width can govern if adequate.
+Tray depth optimization,IMPLEMENTED,FILL_WIDTH / PRODUCT_SELECT,REVIEW REQUIRED,Minimum geometry height + product depth,Selected product must meet minimum depth.
+Ampacity derating handoff,IMPLEMENTED,AMPACITY_ENGINE / AMPACITY_SUMMARY,PASS,"NEC edition, ambient, CCC, tray/cover factors",Procurement/source review does not create false ampacity failure.
+Cable OD / weight / bend database,IMPLEMENTED,CABLE_DB / CABLE_ENGINE,REVIEW REQUIRED,"OD, weight, bend radius, source tier",Exact/family/planning data are distinguished.
+Tray loading / cable dead load,IMPLEMENTED,CABLE_SUMMARY / STRUCTURAL_LOADING,PASS,Cable lb/ft + spare allowance,Feeds product load/span selection.
+Cover dead load,IMPLEMENTED,STRUCTURAL_RULES / STRUCTURAL_LOADING,PASS — EXACT COVER WEIGHT,Exact 807A-36-144 weight auto-applied,Unknown cover weights remain source-gated.
+Environmental / cover loading,IMPLEMENTED — PROJECT INPUT,STRUCTURAL_LOADING,REVIEW REQUIRED — PROJECT WIND/RESTRAINT,Wind/snow/ice/project loads added as lb/ft,No fabricated wind/snow loads.
+Support-span checks,IMPLEMENTED,PRODUCT_SELECT / STRUCTURAL_LOADING,PASS,Tray allowable UDL + support reaction/capacity,Top attachment/rod length remains structural approval.
+Thermal impact screening,IMPLEMENTED,AMPACITY_ENGINE / SC_THERMAL,PASS,Ampacity thermal effects + adiabatic SC screen,Full IEC 60287 thermal model remains separate advanced study.
+Electromagnetic force during fault,IMPLEMENTED,CLEAT_ENGINE,PASS,Peak-current electrodynamic force,Formation-aware fault restraint.
+Cleat force / spacing,IMPLEMENTED,CLEAT_ENGINE / CLEAT_SUMMARY,PASS,"Force, selected spacing, quantity",Source-backed product envelope required.
+Trefoil cleat selection inputs,IMPLEMENTED,CLEAT_ENGINE / CLEAT_SIZE_DB,PASS,OD/formation/fault/spacing → exact part,Current baseline selects CMP Patriot.
+Tray bonding / grounding,IMPLEMENTED,GROUNDING / GROUNDING_RULES,PASS,"Wire EGC, tray-as-EGC, clamps, jumpers",NEC/NEMA limits retained.
+Expansion splice requirements,IMPLEMENTED,EXPANSION_SUPPORTS / EXPANSION_RULES,PASS,ΔT → splice spacing/quantity + guides/anchors,Support attachment remains project-specific.
+Outdoor / environment selection,IMPLEMENTED,MATERIAL / TRAY_TYPE,PASS,Outdoor/cover/material decisions,High wind kept as approval criterion.
+Corrosion / material selection,IMPLEMENTED,MATERIAL,PASS,Aluminum/steel/finish suitability,Special chemical/coastal exposure can require review.
+NEMA tray class / exact load-span,IMPLEMENTED,TRAY_DB / PRODUCT_SELECT / STRUCTURAL_LOADING,PASS,Exact published load/span preferred over legacy class,Historical A/B/C shown only as screening.
+Bend / tee / cross / reducer checks,IMPLEMENTED,FITTING_FILL / BENDS_FITTINGS,PASS,Radius + width/depth + branch/reducer gates,Branch population is required only when those fittings are actually used.
+Cable routing quantities,IMPLEMENTED,ROUTES / ROUTE_DETAIL / ROUTE_FITTINGS,PASS,"Route length, fittings, interfaces, supports",Multi-segment routing retained.
+BOM,IMPLEMENTED,BOM,REVIEW REQUIRED,Calculator-driven equipment/cable procurement schedule,Exact vs pattern verification preserved.
+Tray schedule,IMPLEMENTED,TRAY_SCHEDULE,PASS,Dedicated tray/fitting/support/cover schedule,Linked to BOM and engineering engines.
+Automatic section view / layout,IMPLEMENTED,CROSS_SECTION / LAYOUT_ENGINE,PASS,Measured zone allocation + proportional section,Planning view; code/manufacturer rules still govern.
+Code-check report,IMPLEMENTED,CODE_CHECK_REPORT / REPORT / QA_RELEASE,PASS,Calculation vs approval state split,Formal integrated check matrix.
+,,,,,
+BASELINE ENGINEERING CALCULATION RELEASE,PASS,,,,
+BASELINE PROCUREMENT / IFC STATUS,REVIEW REQUIRED,,,,

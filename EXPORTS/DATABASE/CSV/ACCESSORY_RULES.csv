@@ -1,0 +1,56 @@
+﻿REFERENCE — COVER / BARRIER / ACCESSORY RULES,,,,,,,,
+,,,,,,,,
+Rule / Item,Condition / Geometry,Value,Units,Catalog / Pattern,Source,Verification,Note,
+Straight cover standard clamp qty,60 or 72 in cover,4,ea / cover section,9A-9012 (indoor aluminum),NEMA VE 2 Table 3-3 / Eaton I-25,SOURCE VERIFIED,,
+Straight cover standard clamp qty,120 or 144 in cover,6,ea / cover section,9A-9012 (indoor aluminum),NEMA VE 2 Table 3-3 / Eaton I-25,SOURCE VERIFIED,,
+Bend cover standard clamp qty,Horizontal / vertical bend,4,ea / covered fitting,,NEMA VE 2 Table 3-3 / Eaton I-25,SOURCE VERIFIED,,
+Tee cover standard clamp qty,Tee,6,ea / covered fitting,,NEMA VE 2 Table 3-3 / Eaton I-25,SOURCE VERIFIED,,
+Cross cover standard clamp qty,Cross,8,ea / covered fitting,,NEMA VE 2 Table 3-3 / Eaton I-25,SOURCE VERIFIED,,
+Reducer cover standard clamp qty,Reducer,4,ea / covered fitting,,Eaton I-25,SOURCE VERIFIED,,
+Heavy-duty cover clamp multiplier,Outdoor / heavy duty,0.5,x standard qty,9A-(width)-90x4,NEMA VE 2 / Eaton I-25,SOURCE VERIFIED,Additional clamps may be required in extreme wind.,
+Straight aluminum cover length,Standard procurement length,12,ft,144 suffix,Eaton I-24,SOURCE VERIFIED,10/6/5 ft options also exist.,
+Solid flanged aluminum cover,Straight section,,,807A-(width)-144,Eaton I-24,SOURCE VERIFIED,"80=solid, 7=flanged, A=aluminum.",
+Ventilated flanged aluminum cover,Straight section,,,817A-(width)-144,Eaton I-24,SOURCE VERIFIED,"81=ventilated, 7=flanged, A=aluminum.",
+Cover joint strip,Flat cover,,,99-9980-(width),Eaton I-25,SOURCE VERIFIED,"Plastic, flat covers only.",
+Barrier straight section,3 in loading depth,12,ft,73A-144,Eaton I-16,SOURCE VERIFIED,Includes 99-9982 barrier strip splice.,
+Barrier straight section,4 in loading depth,12,ft,74A-144,Eaton I-16,SOURCE VERIFIED,Includes 99-9982 barrier strip splice.,
+Barrier straight section,5 in loading depth,12,ft,75A-144,Eaton I-16,SOURCE VERIFIED,Includes 99-9982 barrier strip splice.,
+Barrier straight section,6 in loading depth,12,ft,76A-144,Eaton I-16,SOURCE VERIFIED,Includes 99-9982 barrier strip splice.,
+Horizontal bend barrier,3/4/5/6 in loading depth,6,ft,73/74/75/76A-90HBFL,Eaton I-16,SOURCE VERIFIED,Flexible; cut to desired length.,
+Ladder drop-out,Aluminum ladder,,,9A-1104-(tray width),Eaton I-16,SOURCE VERIFIED,4 in rounded cable-exit radius.,
+Grounding clamp,"Aluminum tray, #6 to 250 kcmil",,,9A-2130,Eaton I-17 / NEMA VE 2,SOURCE VERIFIED,Tin-plated aluminum; one listed clamp per tray section when bonding wire EGC to tray.,
+Vertical cable fastening,Vertical cable runs,18,in typical interval,Project-approved cable clamp / tie,NEMA VE 2 §4.5,SOURCE VERIFIED,"This is cable fastening guidance, not cover-clamp spacing.",
+Horizontal single-conductor fastening,Horizontal single-conductor runs,,as needed,,NEMA VE 2 §4.5,SOURCE VERIFIED,May be used to maintain spacing and keep cables within cable-fill area; no generic interval specified.,
+Cover-clamp basis clarification,Straight covers / fittings,,,,NEMA VE 2 Table 3-3 / Eaton,SOURCE VERIFIED,"Use 4 clamps for 6-ft straight covers, 6 for 10/12-ft covers; heavy-duty clamps use half quantity. Do not apply the 18-in vertical cable-fastening interval to cover clamps.",
+HDGAF steel straight cover length,HDG-after-fabrication steel,6,ft,803G-(width)-72,Eaton J-22,SOURCE VERIFIED,HDGAF straight covers available 72 or 60 in only.,
+Solid flanged steel cover,Series 378/476/574 straight section,,,803G-(width)-72,Eaton J-22,SOURCE VERIFIED,"80=solid, 3=flanged steel straight, G=HDGAF.",
+Solid flanged steel fitting cover,Steel fitting,,,802G-(width)-(fitting suffix),Eaton J-22,SOURCE VERIFIED,Use exact fitting suffix.,
+Steel heavy-duty cover clamp,7-in side rail / outdoor,0.5,x standard qty,9G-(width)-9074,Eaton J-23,SOURCE VERIFIED,Additional clamps may be necessary in extreme wind.,
+Steel standard cover clamp,7-in side rail / indoor,,,9G-9017,Eaton J-23,SOURCE VERIFIED,Indoor service only.,
+Steel standard splice,7-in side rail,,,9G-8007,Eaton imperial steel accessories,SOURCE VERIFIED,Pair with hardware; one pair with each straight section.,
+Steel expansion splice,7-in side rail,1,in movement,9G-8017,Eaton imperial steel accessories,SOURCE VERIFIED,Pair with hardware.,
+Steel hold-down clamp,Thermal fixed point,2,pieces / tray,9G-1249HD,Eaton imperial accessories,SOURCE VERIFIED,Two pieces required per tray.,
+Steel expansion guide,Thermal guide point,2,pieces / tray,9G-1249,Eaton imperial accessories,SOURCE VERIFIED,Two guides required per tray.,
+Trough drop-out,HDG steel solid/trough tray,,,9G-1104T-(width),Eaton J-14,SOURCE VERIFIED,Rounded cable-exit surface; hardware included.,
+Grounding clamp,"Aluminum / steel tray, #6–250 kcmil",,,9A-2130,Eaton SKU / imperial accessories,SOURCE VERIFIED,Tin-plated aluminum clamp.,
+30-in HDG trapeze support kit,Overhead tray support,1350,lb uniform load,9G-5530-22SHA,Eaton Series 2-5 trapeze kit,SOURCE VERIFIED,"Uses 1/2-in threaded rod, ordered separately.",
+HDG conduit-to-tray adaptor,"Conduit termination, 1/2–4 in",,,9G-1158 size-group family,Eaton Series 1–5 Steel J-13,SOURCE VERIFIED,Maps conduit size to one of five source-backed HDG adaptor size groups.,
+Steel universal splice,7-in side rail / existing tray interface,,,9G-8007-1/2,Eaton imperial steel accessories,SOURCE VERIFIED,Conditional interface to existing/nonstandard tray.,
+Steel step-down splice,7-in to 4/5/6-in side rail,,,9G-8047 / 9G-8061 / 9G-8062,Eaton imperial steel accessories,SOURCE VERIFIED,Select by target side-rail height.,
+Steel vertical adjustable splice,7-in side rail,,,9G-8027,Eaton imperial steel accessories,SOURCE VERIFIED,For elevation changes not matching standard vertical fittings; bonding jumper not required per manufacturer listing.,
+Steel branch pivot connector,7-in side rail,,,9G-8247,Eaton imperial steel accessories,SOURCE VERIFIED,UL Classified for grounding; conditional branch connection.,
+Vertical tray heavy-duty hold-down,Vertical steel tray,2000,lb/pair,9G-1241,Eaton imperial steel accessories,SOURCE VERIFIED,Two-bolt design; sold in pairs.,
+Vertical tray heavy-duty hold-down,Vertical steel tray,4000,lb/pair,9G-1242,Eaton imperial steel accessories,SOURCE VERIFIED,Four-bolt design; sold in pairs.,
+Tray clamp / guide,General steel tray support,,,9G-1205,Eaton imperial accessories,SOURCE VERIFIED,No-twist clamp/guide family with hardware.,
+Isolator pad,Friction reduction / dissimilar metal isolation,-100,to 160°F,99-PE34,Eaton imperial accessories,SOURCE VERIFIED,UV-resistant HDPE; designed for 9(*)-1205 / 1208 clamp-guide families.,
+,,,,,,Conduit Size in,HDG Adapter Catalog Group,Source
+,,,,,,0.5,9G-1158-1/2 & 3/4,Eaton Series 1–5 Steel J-13
+,,,,,,0.75,9G-1158-1/2 & 3/4,Eaton Series 1–5 Steel J-13
+,,,,,,1,9G-1158-1 & 1 1/4,Eaton Series 1–5 Steel J-13
+,,,,,,1.25,9G-1158-1 & 1 1/4,Eaton Series 1–5 Steel J-13
+,,,,,,1.5,9G-1158-1 1/2 & 2,Eaton Series 1–5 Steel J-13
+,,,,,,2,9G-1158-1 1/2 & 2,Eaton Series 1–5 Steel J-13
+,,,,,,2.5,9G-1158-2 1/2 & 3,Eaton Series 1–5 Steel J-13
+,,,,,,3,9G-1158-2 1/2 & 3,Eaton Series 1–5 Steel J-13
+,,,,,,3.5,9G-1158-3 1/2 & 4,Eaton Series 1–5 Steel J-13
+,,,,,,4,9G-1158-3 1/2 & 4,Eaton Series 1–5 Steel J-13

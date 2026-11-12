@@ -1,0 +1,14 @@
+{
+  "B5": "'RESULTS'!B13",
+  "B6": "'RESULTS'!B14",
+  "B7": "IF(B6=\"\",\"\",IFERROR(INDEX('TRAY_DB'!$S$5:$S$200,MATCH(B6,'TRAY_DB'!$B$5:$B$200,0)),\"\"))",
+  "C7": "IF(B7=\"\",\"REVIEW REQUIRED\",\"PASS\")",
+  "B8": "IF(B6=\"\",\"\",IFERROR(INDEX('TRAY_DB'!$O$5:$O$200,MATCH(B6,'TRAY_DB'!$B$5:$B$200,0)),\"\"))",
+  "C8": "IF(B6=\"\",\"INPUT REQUIRED\",\"INFO\")",
+  "B9": "IF(B6=\"\",\"\",IFERROR(INDEX('TRAY_DB'!$P$5:$P$200,MATCH(B6,'TRAY_DB'!$B$5:$B$200,0)),\"\"))",
+  "C9": "IF(B6=\"\",\"INPUT REQUIRED\",\"INFO\")",
+  "B10": "'BOM'!B93",
+  "C10": "B10",
+  "B11": "IF(OR(B5=\"\",B6=\"\"),\"INPUT REQUIRED\",IF(B7=\"\",\"REVIEW REQUIRED\",IF(B10=\"FAIL\",\"FAIL\",IF(B10=\"INPUT REQUIRED\",\"INPUT REQUIRED\",IF(B10=\"REVIEW REQUIRED\",\"REVIEW REQUIRED\",\"PASS\")))))",
+  "C11": "B11"
+}

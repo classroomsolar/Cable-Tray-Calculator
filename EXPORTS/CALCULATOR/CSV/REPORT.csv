@@ -1,0 +1,177 @@
+﻿CABLE TRAY SYSTEM CALCULATION REPORT — v2,,,,,,,
+Professional report framework linked to the verified production calculator. Detailed calculations and source tables remain on the engineering sheets.,,,,,,,
+,,,,,,,
+DOCUMENT CONTROL,,,,,,,
+Project,Heber 2,Calculation ID,CTRAY-001,Revision,1,Report Date,46279
+Project No.,365084,Client,Ormat Technologies,Location,"Calexico, CA",Document Status,Issued for Construction
+Prepared By,Jay S,Checked By,Jay S,Approved By,Jay S,NEC Edition,2020
+Design Description,Cable Tray,,,,,Overall Release,PASS
+Project Data Mode,Manual v1 Inputs,Import Release,INPUT REQUIRED,,,,
+EXECUTIVE ENGINEERING SUMMARY,,,,,,,
+Engineering Output,Selected / Calculated Value,Units / State,Basis,,Release Gate,Current State,Required Action
+Included Circuits,8,count,Step 2 cable engine,,Cable identity / source,REVIEW REQUIRED,Power cable is exact-source verified; EGC product identity and final fiber approval remain review-gated.
+Tray Type,Solid Bottom,"=IF('RESULTS'!C12="""","""",'RESULTS'!C12)",Step 3,,Tray-type decision,PASS,Provide circuit/project facts only if this gate does not pass.
+Manufacturer,Eaton B-Line,"=IF('RESULTS'!C13="""","""",'RESULTS'!C13)",Step 6,,NEC fill / width,PASS,Check project cable grouping / code branch if review-gated.
+Straight Tray Model,46ASB-36-240,"=IF('RESULTS'!C14="""","""",'RESULTS'!C14)",Eaton Series 46 aluminum solid-bottom catalog pattern selected from manufacturer nomenclature plus verified Series 46 geometry/load/span data; exact standalone SKU-page verification remains procurement review.,,Material / environment,PASS,Confirm severe environment / special temperature source when required.
+Material,Aluminum,"=IF('RESULTS'!C15="""","""",'RESULTS'!C15)",Step 5,,Mechanical product,REVIEW REQUIRED,Series 46 pattern/load-span is source-backed; exact standalone solid-bottom SKU page/unit weight remains procurement review.
+Finish / Grade,Mill Finish / Bare Aluminum,"=IF('RESULTS'!C16="""","""",'RESULTS'!C16)",Step 5,,Bending / fittings,PASS,Obtain missing manufacturer bend-radius data or route fitting detail.
+Inside Width,36,in,Project-selected 36-in inside width; engineering minimum is reported separately.,,Route fittings,PASS,Current 90°/45° solid-bottom aluminum fitting identifiers are catalog-pattern verified; they are not mislabeled as exact SKU-page matches.
+Loading Depth,5.08,in,Selected product family loading depth; project side-rail requirement is 6 in.,,Expansion / supports,REVIEW REQUIRED,Expansion and clamp/guide families are source-backed; final building attachment and threaded-rod length remain structural design items.
+Rung Spacing,N/A,in / N/A,Step 3/product,,Cable cleats,PASS,Provide fault duty/duration only for circuits where cleat restraint applies.
+Support Span,20,ft,Step 6 verified product,,Grounding / accessories,REVIEW REQUIRED,"Dedicated wire EGC governs. Aluminum cover, divider, grounding clamp and drop-out families are source-backed; high-wind cover restraint remains project-specific."
+Required Tray-Carried UDL,23.50286,lb/ft,Cable load + spare + structural project loads,,BOM / procurement,REVIEW REQUIRED,"Remaining reviews: catalog-pattern tray/fittings, EGC/fiber approval, structural attachment/rod length, and high-wind cover restraint."
+Published Allowable UDL,103,lb/ft,Series 46 published load/span basis; current cable load is below published allowable.,,Final NEC ampacity,PASS,Resolve any FAIL / INPUT REQUIRED / REVIEW REQUIRED circuit before release.
+Straight Sections,100,ea,Step 8,,,,
+Total Discrete Fittings,28,ea,Step 8,,,,
+Expansion Splice Kits,30,ea,Step 9,,,,
+Grounding Path,WIRE EGC,"=IF('RESULTS'!C35="""","""",'RESULTS'!C35)",Step 11,,,,
+Automatic Wire EGC Size,3/0 AWG,"=IF('RESULTS'!C36="""","""",'RESULTS'!C36)","Minimum sizing reference only; actual project EGC schedule is 250 kcmil Al, 250 kcmil Al, and 2/0 Al.",,,,
+Cover Selection,SOLID ALUMINUM COVER — 2000 ft; 167 × 807A-36-144 straight covers; 501 × 9A-36-9064 baseline heavy-duty clamps; 36 fitting-clamp demand; 167 × 75A-144 straight dividers + 18 × 75A-90HBFL fitting-divider pieces. High-wind clamp quantity remains REVIEW REQUIRED.,"=IF('RESULTS'!C38="""","""",'RESULTS'!C38)",Step 11,,,,
+Cable-Cleat Release,PASS — 6099 fixed cleats total; max force 53.6 kN/m; circuit-specific part/spacing in CLEAT_ENGINE,"=IF('RESULTS'!C40="""","""",'RESULTS'!C40)",Current filled case uses source-backed trefoil selection; exact row-level part and spacing remain visible in CLEAT_ENGINE.,,,,
+BOM Release,REVIEW REQUIRED,"=IF('RESULTS'!C41="""","""",'RESULTS'!C41)",Step 12,,,,
+,,,,,,,
+,,,,,,,
+ELECTRICAL / PROCUREMENT RELEASE SUMMARY,,,,,,,
+Metric,Value,Status,Source,,BOM Metric,Value,Status
+Overall Engineering Release,PASS,PASS,QA_RELEASE,,Active core items,20,INFO
+Ampacity Release,PASS,PASS,AMPACITY_SUMMARY,,Active fitting items,3,INFO
+BOM Release,REVIEW REQUIRED,REVIEW REQUIRED,BOM,,Active cleat circuit lines,3,INFO
+FAIL Gates,0,INFO,QA_RELEASE,,Review/Input-required active rows,16,REVIEW / INPUT
+INPUT REQUIRED Gates,0,INFO,QA_RELEASE,,STEP 12 BOM RELEASE,REVIEW REQUIRED,REVIEW REQUIRED
+REVIEW REQUIRED Gates,7,INFO,QA_RELEASE,,,,
+,,,,,,,
+,,,,,,,
+SOURCE / TRACEABILITY STATEMENT,,,,,,,
+This report is a front-end to the source-controlled calculator. NEC 2020/2023 logic remains edition-separated; manufacturer properties are used only when source-backed; unknown or configuration-specific conditions remain INPUT REQUIRED / REVIEW REQUIRED instead of being guessed. Detailed source registration is maintained on SOURCES.,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+REVIEW / APPROVAL,,,,,,,
+Role,Name,Signature / Initials,Date,Role,Name,Signature / Initials,Date
+Prepared By,,,,Checked By,,,
+Approved By,,,,Client / Owner Review,,,
+Revision,,,,Issue Purpose,,,
+,,,,,,,
+,,,,,,,
+REPORT NOTE: The existing verified production calculation sheets remain the engineering authority for this Batch 1 release. v2 will add project-scale capabilities only through separately verified additive modules.,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+PROJECT ROUTE NETWORK SUMMARY — v2,,,,,,,
+Metric,Value,Status,Meaning,,Route Release,State,Scope
+Active route segments,1,INFO,Included physical tray-route segments,,PROJECT ROUTE RELEASE,REVIEW REQUIRED,Route definition + circuit mapping readiness; v1 detailed engineering remains authoritative until downstream v2 modules are verified.
+Mapped included circuits,8,INFO,Included circuits with valid route assignments in the active data mode,,,,
+Unmapped / input-required circuits,0,PASS,Included active-data circuits missing valid route mapping,,,,
+Duplicate / invalid circuit mapping,0,PASS,Duplicate route use or unknown Route ID in the active data mode,,,,
+FAIL route segments,0,PASS,Hard route/network failures,,,,
+INPUT REQUIRED route segments,0,PASS,Incomplete route definitions or required mapped data,,,,
+REVIEW REQUIRED route segments,1,REVIEW REQUIRED,Intentional engineering review gates,,,,
+Total defined route length ft,2000,INFO,Sum of active segment lengths,,,,
+Total segment cable weight lb,45622.719999999994,INFO,Sum of cable weight across all active segments,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+CABLE SCHEDULE IMPORT SUMMARY — v2,,,,,,,
+Metric,Value,Status,Meaning,,Active Dataset,Mode,Engineering Boundary
+Included import rows,0,INFO,Rows enabled for import mode,,Project Cable Data,Manual v1 Inputs,Import mode currently resolves source-backed cable identity/physical data and route assignment. Verified v1 detailed ampacity/fill/product engines remain authoritative until their project-route v2 successors are separately released.
+PASS import rows,0,N/A,Cable identity/physical data and route mapping accepted,,,,
+Input/review/fail import rows,0,PASS,Rows requiring attention before project route release,,,,
+IMPORT RELEASE,INPUT REQUIRED,INPUT REQUIRED,FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS,,,,
+,,,,,,,
+,,,,,,,
+ROUTE CROSS-SECTION / LAYOUT VIEW — v2,,,,,,,
+Metric,Value,State,Meaning,,Boundary,State,Engineering Rule
+Selected Route,MAIN-01,INFO,Route ID selected on CROSS_SECTION,,NEC fill / spacing,v1 ENGINE GOVERNS,Visualization cannot override Article 392 calculations.
+Tray Width in,36,INFO,Visualization width basis,,Cable bend / formation,v1 ENGINE GOVERNS,Manufacturer bend radius and source-backed single-conductor formation remain controlling.
+Total Diameter Demand + Spare in,26.723999999999993,INFO,Geometric single-row width demand only,,Visualization,INFO,"Use for rapid engineering review and communication, not procurement release by itself."
+Width Utilization,0.7423333333333332,INFO,Not NEC fill utilization,,,,
+Geometric Area Utilization,0.16927245816998449,INFO,Not NEC code fill percentage,,,,
+Schematic Layout State,REVIEW REQUIRED — SINGLE-CONDUCTOR SPACING/FORMATION,REVIEW REQUIRED — SINGLE-CONDUCTOR SPACING/FORMATION,Planning visualization gate,,,,
+,,,,,,,
+MULTI-TIER SUPPORT RACK SUMMARY — v2,,,,,,,
+Metric,Value,State / Units,Basis,,Structural Boundary,State,Reason
+Included Tiers,0,count,SUPPORT_RACK,,Cross-member / strut,REVIEW GATED,No automatic beam/deflection selection without verified support-member load tables.
+Total Rack UDL,0,lb/ft,SUPPORT_RACK,,Wall cantilever,REVIEW GATED,"Moment, anchor reactions and bracket strength are support-system specific."
+Total Reaction / Support,0,lb,SUPPORT_RACK,,Building attachment,REVIEW GATED,Capacity depends on project steel/concrete/anchors and installation.
+Per-Rod Reaction,0,lb,Symmetric overhead trapeze only,,Threaded rod,PLANNING AUTOMATION,Uses existing v1 reaction thresholds only for symmetric overhead trapeze planning.
+Rod Selection,N/A,planning selection,Existing v1 Eaton I-17 threshold logic,,,,
+Estimated Support Stations,0,ea,Longest route / support spacing,,,,
+Estimated Rod Drops,0,ea,Support stations × rod count,,,,
+Overall Rack Release,N/A,state,Source/project structural gates retained,,,,
+,,,,,,,
+VOLTAGE DROP SUMMARY — v2,,,,,,,
+Metric,Value,Status,Meaning,,Scope Boundary,State,Reason
+Included power circuits,3,INFO,Active power circuits in the selected project data mode,,Database R/X,SCREENING ONLY,Use manual design-impedance override for a released voltage-drop result unless the source basis exactly matches operating conditions.
+PASS circuits,3,PASS,Manual design impedance used and drop within project limit,,Project Limit,USER / PROJECT CRITERION,Default 3.0% is editable and is not asserted as a universal mandatory NEC requirement.
+FAIL circuits,0,PASS,Calculated drop exceeds project limit,,Core Tray Release,UNCHANGED,The verified cable-tray design release is not weakened by this optional v2 electrical check.
+INPUT REQUIRED circuits,0,PASS,Missing length/current/voltage/impedance/PF,,,,
+REVIEW REQUIRED circuits,0,PASS,Screening result uses database/source impedance basis,,,,
+VOLTAGE DROP RELEASE,PASS,PASS,FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS,,,,
+,,,,,,,
+SHORT-CIRCUIT THERMAL SUMMARY — v2,,,,,,,
+Metric,Value,Status,Meaning,,Boundary,State,Engineering Rule
+Included power circuits,3,INFO,Active power circuits,,k Factor,SOURCE GATED,Auto k only for source-supported material/insulation/temperature combinations; manual k must be source-backed.
+PASS circuits,0,INFO,Thermal withstand >= fault/set using a manually confirmed k,,Peak fault input,CONSERVATIVE SCREENING,"When project input is peak kA, Peak/√2 is used as a conservative upper-bound RMS screening value; exact RMS symmetrical duty from the protection study remains preferred."
+FAIL circuits,0,PASS,Thermal withstand < RMS fault/set,,Parallel conductors,REVIEW GATED,Equal fault-current sharing must be confirmed for per-set division.
+INPUT REQUIRED circuits,0,PASS,"Missing RMS fault, duration or conductor data",,Core Tray Release,UNCHANGED,This optional v2 check does not weaken the verified cable-tray release.
+REVIEW REQUIRED circuits,3,REVIEW REQUIRED,Automatic k / parallel-current assumption requires engineering confirmation,,,,
+THERMAL SC RELEASE,REVIEW REQUIRED,REVIEW REQUIRED,FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS,,,,
+,,,,,,,
+CABLE PULL / INSTALLATION SUMMARY — v2,,,,,,,
+Metric,Value,State / Units,Basis,,Boundary,State,Reason
+Selected Circuit,1.1,ID,PULL_PLAN,,Max Pull Tension,PROJECT / MANUFACTURER INPUT,No universal cable pulling limit is invented.
+Pull Assembly Weight,6.669,lb/ft,Circuit physical cable weight / pull grouping,,Tray Bends / Rollers,REVIEW GATED,"Maintained rotating sheaves avoid conduit-like friction multiplication, but cable bending force still requires field/install planning."
+Initial Tension,166.725,lb,Southwire reel-entry method or custom,,Sidewall Pressure,CONTROLLED BENDS ONLY,Calculated only for source-supported bend/formation models.
+Maximum Calculated Tension,2834.3250000000003,lb,Sequential segment calculation,,Core Tray Release,UNCHANGED,Installation module cannot silently override the verified cable-tray design release.
+Maximum Calculated Sidewall Pressure,0,lb/ft,Controlled/frictional bends only,,,,
+Pull Release,N/A,state,Optional until a verified maximum pulling-tension limit is entered; preliminary calculated tension remains shown above.,,,,
+AUDIT / PRODUCTION STATUS — MAIN WORKBOOK,,,,,,,
+Item,State,Where Stored,Meaning,,,,
+Live formula-error scan,PASS,QA_RELEASE / exact-reopened candidate,0 actual formula-error cells and 0 @ formulas after exact XLSX reopen.,,,,
+Regression / adversarial suite,PASS,QA_RELEASE / live workbook,"Invalid cable, route, fault, fitting, parallel-set, AC/DC, and optional-module cases challenged without silent failures.",,,,
+Live issue register,KEPT,ISSUES,Current project release gates remain visible; normal-user missing inputs are distinguished from review boundaries.,,,,
+Formula/data sources,KEPT,SOURCES,Traceability for workbook logic and source-controlled values remains embedded.,,,,
+Production status,MAIN — FINAL VERIFIED,This workbook,Single source of truth; user workflow and engineering engines completed and regression-tested.,,,,
+User workflow,EASY_INPUT FIRST,EASY_INPUT → RESULTS → REPORT,Backend engines remain available without requiring normal users to edit them.,,,,
+Backend structure,KEPT,Engineering / database sheets,Advanced engines remain inspectable and protected behind the EASY_INPUT workflow.,,,,
+,,,,,,,
+,,,,,,,
+FINALIZATION HARDENING SUMMARY,,,,,,,
+Item,State,Source / Sheet,Meaning,,,,
+Cable property binding,FIXED,CABLE_ENGINE / CABLE_PLANNING_DEFAULTS,"Size/voltage/material changes cannot silently reuse stale OD, weight, bend-radius, or voltage data.",,,,
+Input / release hierarchy,FIXED,ISSUES / QA_RELEASE,"FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS is enforced, including contradictory inputs.",,,,
+Automatic route bridge,FIXED,ROUTES / ROUTE_MAP / CROSS_SECTION,Normal users receive MAIN-01 automatically; multi-segment routing remains an advanced override.,,,,
+Optional study semantics,FIXED,SUPPORT_RACK / PULL_PLAN / OPTIMIZER,Unused optional modules show N/A or REVIEW REQUIRED instead of false missing-input states.,,,,
+Formula-error propagation,FIXED,PRODUCT_SELECT / EASY_INPUT / PULL_PLAN,Invalid engineering inputs gate cleanly without #VALUE! cascades.,,,,
+FINAL DESKTOP HANDOFF,,,,,,,
+Check,Current State,What to do,Release Meaning,,,,
+Formula / logic audit,PASS,No action unless formulas are changed.,"19,461 formulas scanned; current exact-package formula-error count = 0.",,,,
+Excel save/reopen,EXTERNAL TEST,"Open in Microsoft Excel Desktop, full recalc, save, close, reopen.",Must show no repair warning.,,,,
+Optional macros,SOURCE EMBEDDED,Use the final VBA source embedded on SOURCES after saving a working copy as .xlsm.,Calculation formulas remain authoritative; macro code automates audit/report/print only.,,,,
+PDF / print pagination,EXTERNAL TEST,Use Excel Print Preview / Export PDF and confirm readable page scaling.,Required before issuing a controlled PDF package.,,,,
+,,,,,,,
+ADDITIVE ENGINEERING MODULE SUMMARY,,,,,,,
+Metric,Value,Calculation State,Approval / Review State,Basis,Engine,Source / Boundary,Action
+Total structural working load,23.503 lb/ft,PASS,REVIEW REQUIRED,Cable + exact cover + project loads,STRUCTURAL_LOADING,Eaton/NEMA load method,Confirm nonzero project environmental loads from project criteria.
+Tray load utilization,22.8%,PASS,REVIEW REQUIRED,Working load / selected allowable UDL,STRUCTURAL_LOADING,Selected product load/span,Must remain <=100%.
+Support reaction / utilization,470.1 lb / 34.8%,PASS,REVIEW REQUIRED,Uniform load × support span versus verified support kit,STRUCTURAL_LOADING,Eaton 36-in heavy-duty trapeze table,Final top attachment / rod length by structure.
+Fitting geometry release,PASS,PASS,REVIEW REQUIRED,Radius + width/depth continuity,FITTING_FILL,Cable bend data + manufacturer/NEMA,Resolve only active failures.
+Fitting route-specific approval,REVIEW REQUIRED,PASS,REVIEW REQUIRED,Branch/reducer/drop-out assignment,FITTING_FILL,Route-specific cable population,Current drop-out assignment remains project review.
+Measured layout used / selected,27.805 / 36.0 in,PASS,,Arrangement-aware physical tray geometry,LAYOUT_ENGINE,Existing FILL_WIDTH engine,Planning section only.
+Tray schedule active lines,18,PASS,REVIEW REQUIRED,Dedicated system schedule,TRAY_SCHEDULE,BOM + engineering engines,Coordinate approvals before procurement.
+Feature coverage,All requested functions mapped,PASS,,Requested calculator function matrix,FEATURE_MATRIX,Production scope control,Use FEATURE_MATRIX for full function map.
+Formal code-check report,CODE_CHECK_REPORT,PASS,REVIEW REQUIRED,Calculation vs approval split,CODE_CHECK_REPORT,Integrated engines,Use for final engineering review.
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,

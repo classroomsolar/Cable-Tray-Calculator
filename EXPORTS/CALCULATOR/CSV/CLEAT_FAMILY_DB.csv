@@ -1,0 +1,8 @@
+﻿REFERENCE — CMP CLEAT FAMILY TEST DATA,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Family,Code,Material,OD Min mm,OD Max mm,Formation,0.1s Test Peak kA,Test Cable OD mm,Test Centres mm,Max Force/Cleat N,1s Published Peak kA,Operating Temp °C,IEC Standard,Source / Limitation
+Reliance,SDAL,5000 Series Aluminum,19,128,Trefoil,106,38,300,15079.894736842105,70,-50 to +60,IEC 61914,"CMP test: 106 kA peak, Ø38 mm, 300 mm fixed centres, 0.1 s. Projection only from shorter tested centres to longer intended centres per CMP guidance."
+Patriot,SDSS,316L Stainless Steel,17,128,Trefoil,135,36,300,25818.75,80,-50 to +60,IEC 61914,CMP 0.1 s 300 mm test; product range 17–128 mm. Duration-specific projection beyond the verified 0.1 s basis is review-gated.
+Conqueror,RTSS,316L Stainless Steel,23,130,Trefoil,170,36,300,40941.666666666664,90,-50 to +60,IEC 61914,CMP 0.1 s 300 mm test; adjustable range-taking family 23–130 mm.
+Sovereign,HDSS,316L Stainless Steel,17,128,Trefoil,190,36,300,51141.66666666667,96,-50 to +60,IEC 61914,"CMP heavy-duty trefoil family; 190 kA peak @ 300 mm, Ø36 mm, 0.1 s."
+Sapphire,SHDSS,316L Stainless Steel,19,150,Single / Parallel / Flat,109,,105,11541.542857142858,,-50 to +60,IEC 61914,"CMP Catalogue 2016 pp.34-35: SHDSS is designed/tested for single, parallel/flat formation. Conservative basis uses 109 kA peak, 105 mm cable centres, 600 mm fixed cleat centres, 0.1 s; max-force-per-cleat derived from CMP flat governing coefficient 0.17."

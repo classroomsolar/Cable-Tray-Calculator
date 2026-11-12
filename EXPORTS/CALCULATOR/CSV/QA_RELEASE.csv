@@ -1,0 +1,72 @@
+﻿04 — QA / RELEASE GATE,,,,,
+Release hierarchy: FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS. N/A is acceptable only when the associated engineering module is genuinely not applicable.,,,,,
+,,,,,
+Step / Module,Release State,Acceptance Criterion,Key Source / Engine,QA Interpretation,Action if Not PASS
+Step 2 — Cable Intelligence,REVIEW REQUIRED,Verified/approved cable identity or explicit review gate,CABLE_SUMMARY,Normal user data is entered through EASY_INPUT; advanced cable/source checks remain available in INPUTS.,Use INPUTS only if a rare manual override is specifically required.
+Step 3 — Tray Type,PASS,Automatic application decision,TRAY_TYPE,User does not preselect tray type,Provide missing application facts.
+Step 4 — NEC Fill / Width,PASS,Applicable NEC branch + commercial width resolution,FILL_WIDTH,No fabricated tray width,Resolve code/layout condition.
+Step 5 — Material / Finish,PASS,Environment/temperature suitability,MATERIAL,Material follows site conditions,Confirm severe environment/source.
+Step 6 — Mechanical Product,REVIEW REQUIRED,Verified product meets geometry/load/span,PRODUCT_SELECT,Actual Eaton product is selected,Provide real support/load constraint.
+Step 7 — Bend / Fitting Radius,PASS,Manufacturer cable bend data supports fitting geometry,BENDS_FITTINGS,No guessed bend radius,Obtain missing cable data.
+Step 8 — Route Fittings,PASS,Route geometry / fitting selection sufficiently defined,ROUTE_FITTINGS,"Current 90°/45° fittings resolve to the 6-in-side-rail aluminum solid-bottom catalog family. IDs are catalog-pattern verified, not falsely represented as exact SKU-page matches.",Obtain project/vendor confirmation if procurement requires exact SKU-page/submittal verification of the generated fitting IDs.
+Step 9 — Expansion / Supports,REVIEW REQUIRED,NEMA thermal/support logic resolved,EXPANSION_SUPPORTS,Aluminum expansion-splice/clamp-guide families and 36-in heavy-duty trapeze support family are source-backed; final building attachment remains structural.,Coordinate top attachment and 1/2-in threaded-rod length with structural design before IFC.
+Step 10 — Cable Cleats,PASS,Trefoil + qualifying 3-phase flat source-backed; single-phase/DC review-gated,CLEAT_SUMMARY,No source-mapped formation may silently auto-select the wrong cleat family.,Provide fault duty/formation detail or arrangement-specific restraint design only when required.
+Step 11 — Grounding / Accessories,REVIEW REQUIRED,Grounding path and required accessories resolved,GROUNDING,Dedicated wire EGC governs. Exact 807A-36-144 cover and 9A-36-9064 heavy-duty clamp are manufacturer verified; divider/drop-out/grounding families are source-backed. High-wind quantity remains project-specific.,Provide project wind criteria / approved cover-restraint detail to close the high-wind review.
+Step 12 — Complete BOM,REVIEW REQUIRED,Procurement schedule carries all unresolved gates,BOM,"The active hardware database is strengthened and no generic active item is left as SOURCE REQUIRED. Remaining reviews are explicit: catalog-pattern tray/fittings, EGC/fiber approval, structural attachment/rod length, and high-wind cover restraint.",Close only those project/procurement-specific reviews; do not replace them with guessed data.
+Final Ampacity — NEC 2020/2023,PASS,Edition-specific NEC route + ambient + CCC + tray/cover + lower valid source limit,AMPACITY_SUMMARY,Numerical NEC ampacity result is reported independently from procurement/source review notes.,Correct only if numerical ampacity FAIL or a genuinely required electrical quantity is absent.
+Step 1 — Project Input Sanity,PASS,Critical contradictory/missing normal-user inputs are gated,ISSUES rows 29:37,Input sanity participates in core release,Correct highlighted EASY_INPUT values before release.
+FINAL RELEASE SUMMARY,,,,,
+FINAL RELEASE SUMMARY,,,,,
+ENGINEERING CALCULATION RELEASE,PASS,FAIL and INPUT REQUIRED from legacy core gates or additive structural/fitting engines block the calculator. REVIEW REQUIRED stays in Procurement / IFC.,,,
+FAIL gates,0,,,,
+INPUT REQUIRED gates,0,,,,
+REVIEW-gated modules,7,,,,
+Additive core calculation gate,PASS,Structural numerical + fitting geometry/route-required inputs,,,
+PROCUREMENT / IFC STATUS,REVIEW REQUIRED,Project/vendor approvals tracked separately from the engineering calculation release.,,,
+Meaning,PASS = calculations are complete. Procurement / IFC may still require project/vendor approval.,,,,
+Check,Required,Observed / State,Result,Reason,Release Action
+Formula error scan,0 actual formula-error cells,0,PASS,0 actual formula-error cells; verified before export and on the exact-reopened production candidate.,Must pass exact reopen.
+Exact XLSX reopen,PASS,PASS — production candidate exact XLSX reopen verified,PASS,Exported candidate reopened without repair; exact file contained 0 actual formula-error cells and 0 formulas containing @.,Final MAIN export rechecked after save.
+Input workflow,Minimum user facts,"EASY_INPUT is the primary workflow; automatic MAIN-01 routing, direct numeric validation, source-backed planning fallbacks, and optional-study readiness are visible without backend editing.",PASS,Normal-user inputs drive all defensible calculations; genuine project/source limitations remain review-gated.,Preserve this workflow.
+Source-gated manufacturer data,PASS,,PASS,Unknown properties remain blank/review-gated,No invented manufacturer data.
+NEC edition separation,PASS,,PASS,Edition-specific NEC rules retained,No cross-edition silent fallback.
+Regression / adversarial QA closure,PASS,"Cable size/voltage binding, new-circuit entry, unsupported cable, zero route, route geometry, fractional parallels, negative fittings, fault duration, RMS/XR, AC/DC contradiction, overload, and release hierarchy tests passed with no formula-error propagation.",PASS,Current hard-test audit,Re-run after future logic changes.
+,,,,,
+INTEGRATED QA EVIDENCE,,,,,
+Formula population,REVALIDATED,"Formula families preserved and hardened; automatic route bridge, planning cable binding, optional-module semantics, and error-propagation guards added.",Current finalization audit,0 actual formula-error cells in live workbook before export.,PASS
+Engineering regression,PASS,Cleat / ampacity / voltage drop / SC thermal / expansion / pull / optimizer / fill / grounding / BOM / route / support guards challenged.,Current finalization audit,Valid project results are preserved unless a proven defect is corrected.,PASS
+,,,,,
+SUPPLEMENTAL ENGINEERING STUDY SUMMARY — DOES NOT REDEFINE CORE TRAY RELEASE,,,,,
+Study,State,Governing Source,Core Release Impact,Interpretation,Action if Not PASS
+Voltage Drop,PASS,VOLTAGE_DROP,Supplemental — core tray release unchanged,Project voltage-drop criterion and auto-upsize review.,Resolve before electrical design release when the project applies a VD criterion.
+Short-Circuit Thermal,REVIEW REQUIRED,SC_THERMAL,Supplemental electrical safety check — core tray release unchanged,Adiabatic conductor withstand against RMS fault duty and clearing time.,Resolve before final cable/protection release when fault duty applies.
+Cable Pull / Installation,N/A,PULL_PLAN,Installation planning — core tray release unchanged,Pull tension / sidewall-pressure planning with source-gated assumptions.,Optional. Activate by providing a verified maximum pulling-tension limit; the planning sheet still calculates preliminary tension beforehand.
+Product Optimizer,REVIEW REQUIRED,OPTIMIZER,Advisory only,Ranks already-qualified products; cannot make an unqualified product acceptable.,Optional. Resolve only when alternative-product optimization is being used.
+,,,,,
+SUPPLEMENTAL STUDY STATE,REVIEW REQUIRED,Informational combined readiness only. QA_RELEASE!B20 remains the governing Core Tray Release.,,,
+,,,,,
+EXCEL DESKTOP FINAL QUALIFICATION — EXTERNAL TO THIS CHAT RUNTIME,,,,,
+Check,State,Why,User Action,Affects Formula Audit?,Required Before Final .xlsm Release?
+Excel Desktop / VBA / PDF / Print,SOURCE EMBEDDED / EXCEL COMPILE REQUIRED,The complete final VBA module is embedded on SOURCES for controlled import. This runtime cannot compile VBA or create a true macro-enabled .xlsm binary.,In Excel Desktop: Save As .xlsm → VBA editor → insert standard module → paste the embedded source → Debug > Compile → run CT_SetupProductionWorkbook → test PDF/print.,No — formula audit is already complete.,"Yes, for macro-enabled controlled release."
+,,,,,
+ADDITIVE ENGINEERING MODULE REGRESSION,,,,,
+Module,Calculation State,Approval / Review State,Core Release Impact,Regression Intent,Source
+Structural / cover loading,PASS,REVIEW REQUIRED,Numerical load failure must be visible; project wind/attachment stays approval-only.,Cable + cover + environmental/concentrated load integration,STRUCTURAL_LOADING
+Fitting fill / bend / branch,PASS,REVIEW REQUIRED,Radius/geometry failure visible; route-specific branch/drop-out assignment separate.,Bend/tee/cross/reducer/drop-out checks,FITTING_FILL
+Measured automatic layout,PASS,Planning aid,No new approval gate beyond existing spacing/segregation logic.,Existing width geometry must remain unchanged,LAYOUT_ENGINE
+Tray schedule,PASS,REVIEW REQUIRED,Schedule cannot hide BOM engineering failures.,Dedicated drawing/procurement schedule,TRAY_SCHEDULE
+Formal code-check report,PASS,REVIEW REQUIRED,Mirrors existing core calculation release; does not invent a new release hierarchy.,Integrated cross-module report,CODE_CHECK_REPORT
+Feature matrix,PASS,Scope control,No calculation impact.,Confirms requested functionality remains implemented,FEATURE_MATRIX
+,,,,,
+2026-09-21 SELF-AUDIT — DEFECTS FOUND AND FIXED,,,,,
+Audit Item,Defect Found,Fix Applied,Regression Test,Final State,Notes
+Additive gate counters,Overall FAIL/INPUT REQUIRED could occur while displayed gate count stayed 0,FAIL/INPUT counters now include additive structural/fitting gate,Negative structural load; active tee/reducer,PASS,Counter and overall release now agree.
+Product-selection cache,Exported formulas were correct but cached result could show planning fallback instead of 46ASB-36-240,Forced candidate qualification and selected-product chain before export,Exact reopen + baseline,PASS,Final baseline selects Eaton B-Line 46ASB-36-240.
+Structural input sanity,Negative environmental/concentrated/cover loads could reduce working load,Hard FAIL formulas + nonnegative Excel validation,-5 lb/ft environmental; -1 lb/ft cover override,PASS,Invalid negative loads cannot pass.
+Project inside-width override,24-in project width could pass even though engineering minimum is 27.805 in,STEP 4 now FAILS if project width < engineering target,Set project width to 24 in,PASS,Restored baseline 36 in passes.
+Project side-rail override,User-selected side-rail minimum was not used in product qualification,Added source-backed nominal side-rail metadata and candidate gate,Set side rail to 7 in with current Al database,PASS,Returns INPUT REQUIRED instead of silently selecting 6-in family.
+Local fitting supports,"ROUTE_FITTINGS local-support summary summed the text verification column, always returning 0",Added explicit fitting support count engine; summary now sums support stations,10x90 + 8x45 at 24-in radius,PASS,Baseline local fitting support stations = 54.
+Support BOM propagation,Threaded rods / isolator pads understated because fitting supports were omitted,BOM and tray schedule now include local fitting supports,Baseline quantity reconciliation,PASS,Threaded-rod drops and isolator pads = 430.
+Diagnostics integration,New structural/fitting gates were not visible on ISSUES / RESULTS,Added additive engineering gate diagnostics and results summary,Trigger tee/reducer/overload states,PASS,Troubleshooting path is visible.
+Grounding report clarity,Code-check report showed 3/0 minimum as if it were the project EGC schedule,Report now distinguishes auto minimum from actual 250/250/2/0 Al project schedule,Baseline report review,PASS,Exact product approval remains separate.
+Release restoration,Adversarial tests could leave stale cached downstream values,Forced dependent formula chains and exact-export reopen,"Zero route, width, tee, reducer, negative load, overload",PASS,Restored baseline Engineering Calculation Release = PASS.

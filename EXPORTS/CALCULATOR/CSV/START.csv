@@ -1,0 +1,72 @@
+﻿CABLE TRAY CALCULATOR — PRODUCTION WORKBOOK,,,,,,,,,
+v2 extends the verified production calculator additively. Existing v1 engineering formulas remain intact while project-scale modules are added behind explicit release gates.,,,,,,,,,
+NORMAL WORKFLOW: EASY_INPUT → RESULTS → REPORT. INPUTS is advanced/back-end only.,,,,,,,,,
+PROJECT / DOCUMENT CONTROL,,,,,CURRENT ENGINEERING SNAPSHOT,,,,
+Project Name,Heber 2,Calculation ID,CTRAY-001,,Selected Tray Type,,Manufacturer,,Straight Tray Model
+Project Number,365084,Revision,1,,Solid Bottom,,Eaton B-Line,,46ASB-36-240
+Client,Ormat Technologies,Report Date,46279,,Material / Finish,,Inside Width (in),,Loading Depth (in)
+Site / Location,"Calexico, CA",Document Status,Issued for Construction,,Aluminum / Mill Finish / Bare Aluminum,,36,,5.08
+Prepared By,Jay S,NEC Edition (linked),2020,,Support Span (ft),,Grounding Path,,Cleat Release
+Checked By,Jay S,Final Release Gate (linked),PASS,,20,,WIRE EGC,,PASS — 6099 fixed cleats total; max force 53.6 kN/m; circuit-specific part/spacing in CLEAT_ENGINE
+Approved By,Jay S,NEC Ampacity Approval Gate (linked),PASS,,,,,,
+Design Description,Cable Tray,BOM / Procurement Gate (linked),REVIEW REQUIRED,,,,,,
+,,Project Route Release (v2),REVIEW REQUIRED,,,,,,
+Project Data Mode,Manual v1 Inputs,Manual keeps the verified v1 input/cable engine path. Import activates the v2 cable schedule staging + route bridge without altering v1 formulas.,,,,,,,
+"WORKBOOK NAVIGATION — USER WORKFLOW FIRST, ENGINEERING / REFERENCE TABS AFTER",,,,,,,,,
+Stage,Go To Tab,Purpose,Normal User?,,Architecture Layer,Examples,Function,Editing Guidance,v2 Policy
+1,EASY_INPUT,Primary normal-user input sheet with live results,YES — START HERE,,User-facing,"START, REPORT, INPUTS, RESULTS","Project control, inputs, results and report",Normal user may edit only designated input cells,Stable
+2,RESULTS,Calculated engineering recommendations and review gates,YES,,Engineering engines,02–18 calculation sheets,Formula-driven design calculations,Do not manually overwrite formulas,Protected logic
+3,REPORT,Issue-ready calculation report / print source,YES,,Source / database,"CABLE_DB, 87–99",NEC/manufacturer/reference data,Change only through controlled source update,Source-controlled
+4,INPUTS,Advanced/manual overrides and diagnostics,ADVANCED ONLY,,Future v2 modules,"Route network, import, visualization, support rack, etc.",Added in verified batches,Must not weaken v1 release logic,Additive only
+5,SUPPORT_RACK,Multi-tier common support / rod reaction planning,YES / structural reviewer,,,,,,
+6,VOLTAGE_DROP,Optional source-gated voltage-drop calculation,YES / electrical reviewer,,"v2 RELEASE RULE: every enhancement is additive. Existing verified v1 formulas remain the protected fallback until a new module has its own source basis, regression tests, and explicit release gate.",,,,
+7,SC_THERMAL,Optional adiabatic cable short-circuit thermal check,YES / electrical reviewer,,,,,,
+8,PULL_PLAN,Cable tray / controlled-bend pulling-tension plan,YES / installation reviewer,,,,,,
+9,RESULTS,Verified core cable-tray results / unresolved gates,YES,,,,,,
+,,,,,PRODUCTION CLEANUP,PRODUCTION CLEANUP,PRODUCTION CLEANUP,PRODUCTION CLEANUP,PRODUCTION CLEANUP
+,,,,,Research register,Separate workbook,100 tools + 100 references moved out,DONE,Keeps calculator clean
+,,,,,QA200 results,Separate workbook,200 logical/adversarial tests archived outside calculator,DONE,No test clutter in production workbook
+,,,,,Sheet names,Simple names,No more V2/number-heavy names in user path,DONE,Formula references updated
+,,,,,Workflow,User sheets first,"Inputs, Results, BOM, Report and Issues at front",DONE,Backend remains inspectable
+,,,,,FINALIZATION — USER-SAFE RELEASE,,,,
+,,,,,Critical safety fixes,Stale cable data blocked; visible voltage class governs; invalid input cascades hardened,DONE,No believable-but-wrong fallback to old cable properties,
+,,,,,Normal-user automation,Automatic MAIN-01 route; cross-section bridge; optional studies correctly N/A/review-gated,DONE,EASY_INPUT remains the primary workflow,
+,,,,,Hard regression,Cable/route/fault/fitting/parallel/AC-DC/hierarchy/new-circuit cases challenged,PASS,Exact exported candidate reopened cleanly; final MAIN bytes are rechecked after save.,
+,,,,,Reverse pull,Forward vs reverse pull-direction screening,DONE,Uses existing Southwire-style segment equations; project/manufacturer limits still govern,
+,,,,,100+100 research corpus,100 calculators + 100 engineering references,DONE,Source register for adaptations and controlled boundaries,
+,,,,,Adversarial regression,External QA Register,200 logical / edge-case tests completed and archived separately,COMPLETE,Production calculator remains free of test-result clutter
+,,,,,,,,,
+WORKBOOK STRUCTURE — 54 WORKSHEETS | EASY_INPUT front end + engineering engines + verified cable/equipment databases + QA / reports + cable planning defaults,,,,,,,,,
+"No research-only, benchmark-only, or QA-test-result tabs are kept in the production calculator. Backend sheets are retained because they support calculations, product data, code tables, mappings, or source traceability.",,,,,,,,,
+,,,,,,,,,
+ADVANCED WORKFLOW STATUS — LIVE RELEASE / NEXT ACTION,,,,,,,,,
+This panel does not replace engineering calculations. It surfaces the governing release state and the next safe action.,,,,,,,,,
+,,,,,,,,,
+OVERALL RELEASE,,FAIL GATES,,INPUT REQUIRED,,REVIEW REQUIRED,,NEC EDITION,
+PASS,,0,,0,,7,,2020,
+,,,,,,,,,
+NEXT SAFE ACTION,,Engineering release gates are clear — run final preflight / report package.,,,,,,,
+,,,,,,,,,
+Production workflow: use the macro-enabled release build for Preflight → Generate Full Report PDF → Print Full Report. The calculation workbook remains the source of truth; macros only automate release/report tasks.,,,,,,,,,
+,,,,,,,,,
+FINAL QUALIFICATION / ONE-FILE WORKFLOW,,,,,,,,,
+WORKBOOK,,FORMULA AUDIT,,FORMULA ERRORS,,CORE RELEASE,,EXCEL DESKTOP,
+MAIN R16,,"19,461 / 19,461",,0,,PASS,,SOURCE EMBEDDED,
+,,,,,,,,,
+FINAL DESKTOP CHECK,,1) Open MAIN in Microsoft Excel Desktop and allow a full recalculation. 2) Save a working copy as .xlsm only if optional macros are desired. 3) Confirm Excel saves/closes/reopens without a repair warning. 4) Check REPORT in Print Preview / Export PDF for readable pagination. 5) Resolve the live INPUT REQUIRED / REVIEW REQUIRED engineering gates before IFC/procurement release.,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Use this MAIN workbook as the single source of truth. Detailed audit evidence is summarized on QA_RELEASE; separate audit files are not required for normal use.,,,,,,,,,
+,,,,,,,,,
+ADDITIVE ENGINEERING MODULES — CURRENT PRODUCTION BUILD,,,,,,,,,
+Sheet,Purpose,Core / Supplemental,Current Baseline,User Action,,,,,
+STRUCTURAL_LOADING,Cable + cover + environmental/concentrated load; tray/support utilization,Core numerical / approval split,PASS,Enter project environmental/concentrated load only when applicable.,,,,,
+FITTING_FILL,Bend/tee/cross/wye/reducer/drop-out geometry and route-specific fill gates,Core geometry / route-specific approval,PASS,Route-specific cable assignment only for active branch/reducer/drop-out cases.,,,,,
+LAYOUT_ENGINE,Measured automatic tray section/zone allocation,Planning / geometry,PASS,No extra input for current profile.,,,,,
+TRAY_SCHEDULE,Dedicated tray/fitting/support/cover/grounding/cleat schedule,Deliverable,PASS,No extra input.,,,,,
+CODE_CHECK_REPORT,Integrated formal engineering/code check matrix,Deliverable,PASS,Review calculation vs approval columns separately.,,,,,
+FEATURE_MATRIX,Requested feature coverage and engine map,QA / scope control,PASS,No extra input.,,,,,
+STRUCTURAL_RULES,Source-backed cover/support/load reference data,Backend database,SOURCE CONTROLLED,Do not edit normal workflow.,,,,,

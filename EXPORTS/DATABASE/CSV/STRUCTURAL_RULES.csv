@@ -1,0 +1,15 @@
+﻿REFERENCE — STRUCTURAL / COVER / SUPPORT RULES,,,,,,,
+Source-backed constants used by the structural loading engine. Unknown environmental loads are never guessed.,,,,,,,
+,,,,,,,
+Rule Type,Material / Width,Catalog / Class,Length / Channel,Weight / Capacity,Derived / Rod,Verification,Source
+Straight solid flanged cover,Aluminum / 36 in,807A-36-144,12,8.298,0.6915,EXACT_CATALOG_NUMBER_VERIFIED,https://www.eaton.com/us/en-us/skuPage.807A-36-144.html
+Heavy-duty trapeze support,36 in tray,9G-5536-22SHA,46,1350,0.5,CATALOG_MODEL_VERIFIED,https://www.eaton.com/content/dam/eaton/products/support-systems/cable-management/series-1-2-3-4-5-aluminum-steel-cable-tray-section-cable-management-catalog.pdf
+,,,,,,,
+Historical / screening NEMA load class,Any,A,Rated span,50,Screen only,SOURCE VERIFIED,https://www.eaton.com/content/dam/eaton/products/support-systems/cable-management/b-line-cable-tray-design-considerations.pdf
+Historical / screening NEMA load class,Any,B,Rated span,75,Screen only,SOURCE VERIFIED,https://www.eaton.com/content/dam/eaton/products/support-systems/cable-management/b-line-cable-tray-design-considerations.pdf
+Historical / screening NEMA load class,Any,C,Rated span,100,Screen only,SOURCE VERIFIED,https://www.eaton.com/content/dam/eaton/products/support-systems/cable-management/b-line-cable-tray-design-considerations.pdf
+,,,,,,,
+Environmental load rule,Outdoor / covered tray,Wind / snow / ice / attached materials,Project-specific,User/source input required,Add to working load,SOURCE REQUIRED WHEN NONZERO,https://www.eaton.com/content/dam/eaton/products/support-systems/cable-management/cable-tray-management-catalog.pdf
+Working-load rule,All tray systems,Cable + concentrated + wind + snow + ice + other,Selected support span,Total lb/ft,Use total for tray selection,SOURCE VERIFIED,https://www.eaton.com/content/dam/eaton/products/support-systems/cable-management/cable-tray-management-catalog.pdf
+,,,,,,,
+Boundary,Cover environmental loading,,,,,PROJECT REVIEW,Manufacturer notes covers may require separate environmental-load review; no wind/snow load is fabricated.

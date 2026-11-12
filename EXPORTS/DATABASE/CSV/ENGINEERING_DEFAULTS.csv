@@ -1,0 +1,19 @@
+﻿AUTO ENGINEERING DEFAULTS / SCREENING SOURCES — NORMAL USER DOES NOT NEED TO FILL THIS SHEET,,,,,,
+,,,,,,
+Default / Assumption,Value,Units,Use / Boundary,,,
+Planning straight tray section length,12,ft,Used only when an exact tray SKU/length has not yet been selected.,,,
+Planning support span,10,ft,Planning quantity only; exact support/span remains structural/manufacturer review.,,,
+Power-to-other-cable separation,2,in,Project/layout planning separation used in arrangement-aware width geometry.,,,
+Other-to-other cable gap,0.5,in,Project/layout planning gap used between non-power/EGC cable envelopes.,,,
+Automatic AC power factor,0.9,pu,Voltage-drop screening default only when project PF is blank; user entry overrides it.,,,
+,,,,,,
+Material,Conductor Size,Voltage Class V,AC Resistance @ 90°C Ω/kft,Inductive Reactance @ 60Hz Ω/kft,Source,Use
+Aluminum,4/0 AWG,15000,0.105,0.043,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback
+Aluminum,350 kcmil,15000,0.065,0.04,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback
+Aluminum,500 kcmil,15000,0.046,0.037,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback
+Aluminum,600 kcmil,15000,0.039,0.037,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback
+Aluminum,750 kcmil,15000,0.033,0.035,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback
+Aluminum,1000 kcmil,15000,0.026,0.035,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback
+Aluminum,1250 kcmil,15000,0.023,0.033,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback
+Aluminum,1500 kcmil,15000,0.021,0.032,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback
+Aluminum,2000 kcmil,15000,0.019,0.031,https://cabletechsupport.southwire.com/en/cablespec/download_spec/?country=US&spec=46311,Screening fallback

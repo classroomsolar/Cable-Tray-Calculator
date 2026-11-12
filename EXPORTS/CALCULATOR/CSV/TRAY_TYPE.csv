@@ -1,0 +1,14 @@
+﻿07 — TRAY TYPE / RUNG-SPACING DECISION,,,,,
+,,,,,
+Metric,Value,Status,Decision Basis,Source,Engineering Note
+Included circuits,8,INFO,Count of included circuits.,CABLE_ENGINE,
+Power physical cables,9,INFO,Any power cable drives the default industrial/commercial ladder path.,Eaton B-Line design considerations,Ladder is the most widely used industrial/commercial tray and maximizes airflow.
+Control + instrumentation physical cables,0,INFO,Small control/instrument populations support closer rung/channel options.,Eaton B-Line design considerations,6/9/12-in rung spacings are recommended for small control/instrument cable.
+Communication + fiber physical cables,2,INFO,Communication/fiber remain separately compatibility-gated.,Project / NEC compatibility,
+Total non-power cable area,4.07825850325759,INFO,Used to decide whether the verified 6-in ventilated channel fill limit can contain the non-power population.,NEC 392.22 channel table,No arbitrary cable-count threshold is used; actual cable area is used.
+Single-conductor power physical cables,9,INFO,"Drives phase-grouping, rung and cleat logic.",CMP / NEC / Eaton,Cleat engine applies later.
+EMI / RFI shielding requested?,No,INFO,"If requested, solid-bottom/cover shielding becomes the dominant tray-type requirement.",Eaton B-Line design considerations,Solid bottom can retain moisture; select it for an actual protection/shielding need.
+AUTO tray type,Solid Bottom,PASS,Power -> Ladder; EMI/RFI -> Solid Bottom; non-power-only area <=3.8 in² -> Ventilated Channel; otherwise Ladder.,Eaton B-Line design considerations,"Calculator decision, not a user dropdown."
+AUTO rung spacing,N/A,N/A,Power ladder defaults to 9 in; non-power ladder to 6 in.,Eaton B-Line design considerations,Bend-radius check later can require a larger spacing only when code/project permits.
+AUTO cover requirement,Solid,PASS,Auto cover becomes Solid only for EMI/RFI; otherwise None.,Eaton B-Line design considerations,Cover clamps/accessories are selected later.
+Tray-type release,PASS,PASS,Step 2 must release before Step 3.,Step 2 + Step 3,

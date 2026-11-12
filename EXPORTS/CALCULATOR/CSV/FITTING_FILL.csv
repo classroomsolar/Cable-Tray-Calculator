@@ -1,0 +1,24 @@
+﻿16 — FITTING FILL / GEOMETRY / BEND-RADIUS CHECK,,,,,,,,,,,
+"Checks the selected straight-tray width/depth through fittings, cable minimum bend radius against fitting radius, and identifies branch/reducer/drop-out cases that need route-specific cable assignment.",,,,,,,,,,,
+,,,,,,,,,,,
+Fitting,Qty,Selected Radius in,Required Cable Radius in,Tray Width in,Required Width in,Tray Depth in,Required Depth in,Geometry / Bend,Route-Specific Fill,Overall State,Engineering Note
+Horizontal 90° Elbow,10,24,23.4,36,27.805,5.08,3.63874953741,PASS,N/A,PASS,Same-width bend; radius + width + depth govern.
+Horizontal 45° Elbow,8,24,23.4,36,27.805,5.08,3.63874953741,PASS,N/A,PASS,Same-width bend; radius + width + depth govern.
+Horizontal 30° Elbow,0,24,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Same-width bend; radius + width + depth govern.
+Horizontal Tee,0,24,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Branch cable assignment is required to verify each outgoing leg when used.
+Horizontal Cross,0,24,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Branch cable assignment is required to verify each outgoing leg when used.
+Horizontal Wye,0,24,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Branch cable assignment is required to verify each outgoing leg when used.
+Reducer,0,N/A,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Downstream width/depth must be known when a reducer is used.
+Vertical Inside Bend,0,24,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Radius + width + depth govern.
+Vertical Outside Bend,0,24,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Radius + width + depth govern.
+Vertical Tee,0,24,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Branch cable assignment is required when used.
+Drop-Out / Cable Exit,10,4,23.4,36,27.805,5.08,3.63874953741,REVIEW REQUIRED — EXIT CABLE ASSIGNMENT,REVIEW REQUIRED — IDENTIFY CABLES USING DROP-OUT,REVIEW REQUIRED,4-in rounded accessory radius is not assumed adequate for every cable. Assign the exiting cable group before final bend-radius release.
+Adjustable Direction Change,0,N/A,23.4,36,27.805,5.08,3.63874953741,N/A,N/A,N/A,Manufacturer/accessory geometry required when used.
+,,,,,,,,,,,
+SUMMARY,,,,,,,,,,,
+Active radius-fitting geometry failures,0,,,,,,,,,,
+Active branch/reducer input-required rows,0,,,,,,,,,,
+Drop-out / exit assignment review,1,,,,,,,,,,
+CORE FITTING GEOMETRY RELEASE,PASS,,,,,,,,,,
+FITTING ROUTE-SPECIFIC APPROVAL,REVIEW REQUIRED,,,,,,,,,,
+,,,,,,,,,,,

@@ -1,0 +1,20 @@
+{
+  "B4": "COUNTIF('CABLE_ENGINE'!$A$5:$A$44,\"Yes\")",
+  "C4": "IF(B4=0,\"N/A\",\"INFO\")",
+  "B5": "COUNTIF('CABLE_ENGINE'!$AP$5:$AP$44,\"PASS\")",
+  "C5": "IF(B5=B4,\"PASS\",\"INFO\")",
+  "B6": "COUNTIF('CABLE_ENGINE'!$AP$5:$AP$44,\"INPUT REQUIRED\")",
+  "C6": "IF(B6=0,\"PASS\",\"INPUT REQUIRED\")",
+  "B7": "COUNTIF('CABLE_ENGINE'!$AP$5:$AP$44,\"REVIEW REQUIRED\")",
+  "C7": "IF(B7=0,\"PASS\",\"REVIEW REQUIRED\")",
+  "B8": "COUNTIF('CABLE_ENGINE'!$AP$5:$AP$44,\"FAIL\")",
+  "C8": "IF(B8=0,\"PASS\",\"FAIL\")",
+  "B9": "SUM('CABLE_ENGINE'!$AJ$5:$AJ$44)",
+  "C9": "\"INFO\"",
+  "B10": "IF(COUNT('CABLE_ENGINE'!$Y$5:$Y$44)=0,\"\",MAX('CABLE_ENGINE'!$Y$5:$Y$44))",
+  "C10": "\"INFO\"",
+  "B11": "COUNTIF('CABLE_ENGINE'!$AR$5:$AR$44,\"Yes\")",
+  "C11": "\"INFO\"",
+  "B12": "IF(B8>0,\"FAIL\",IF(B6>0,\"INPUT REQUIRED\",IF(B7>0,\"REVIEW REQUIRED\",IF(B4=0,\"N/A\",\"PASS\"))))",
+  "C12": "B12"
+}

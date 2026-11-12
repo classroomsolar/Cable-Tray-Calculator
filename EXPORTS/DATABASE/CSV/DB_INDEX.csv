@@ -1,0 +1,23 @@
+﻿MASTER DATABASE IMPORT INDEX,,,,,
+Reusable database/reference content only. Project-specific 'current' flags were removed. Use verification tier to control automatic selection.,,,,,
+,,,,,
+Sheet,Purpose,Primary Key / Lookup,Verification Control,Master-Merge Guidance,Notes
+CABLE_DB,Manufacturer cable/product records,Part Number + fallback keys,Verification Status / Source Tier / Identifier Type,Merge,"Exact products, family candidates, and design-basis rows are deliberately distinguished."
+TRAY_DB,Tray straight-section product/family records,Manufacturer + Series/Model,Verification Status + Verification Tier,Merge,CATALOG_PATTERN rows remain review-gated for procurement.
+EQUIPMENT_DB,Fittings/accessories/supports/covers/cleats,Manufacturer + Catalog/Pattern,Verification Tier + Auto-Selected?,Merge,Selection eligibility is generic; no project-current flags remain.
+NEC_FILL,NEC tray-fill reference data,Edition / rule key,Source fields,Merge,Normative reference data.
+NEC_AMPACITY_2020,NEC 2020 ampacity data,Engine Lookup Key,Source Verification State,Merge,Keep edition-separated.
+NEC_AMPACITY_2023,NEC 2023 ampacity data,Engine Lookup Key,Source Verification State,Merge,Keep edition-separated.
+AMPACITY_RULES,Ampacity routing/adjustment rules,Rule / route key,Source/basis fields,Merge,Engineering rule layer.
+SIZE_MAP,Conductor size normalization,Size label,N/A,Merge,Lookup utility.
+SC_K_FACTORS,Short-circuit thermal k factors,Material/insulation/temp basis,Source fields,Merge,Use only within stated temperature/material boundaries.
+EXPANSION_RULES,Thermal expansion/support rules,Material/rule,Source fields,Merge,Engineering rule layer.
+CLEAT_FAMILY_DB,Cleat family test/selection data,Family,Source/verification,Merge,Family-level selection limits.
+CLEAT_SIZE_DB,Cleat exact part size ranges,Part number,Source/verification,Merge,Exact part mapping.
+CLEAT_SIZE_MAP,Cleat OD-to-part lookup,Family + OD,Selection State,Merge,Derived lookup map.
+GROUNDING_RULES,Grounding/bonding sizing and selection rules,Rule key,Source/basis,Merge,Engineering rule layer.
+ACCESSORY_RULES,Cover/barrier/accessory rules and catalog patterns,Rule/item + condition,Verification,Merge,"Pattern rows are rules, not automatically exact procurement SKUs."
+ENGINEERING_DEFAULTS / CABLE_PLANNING_DEFAULTS / SOURCES,"Screening defaults, conservative planning envelopes, and source register",Sheet-specific,Source Tier / limitations,Merge with limitations preserved,Do not upgrade planning/default rows to exact-product status.
+STRUCTURAL_RULES,"Cover dead load, support-kit capacity and working-load reference rules",Rule Type + Material/Width + Catalog/Class,Verification / Source,Merge,Additive structural loading source data.
+FITTING_RULES,Fitting radius/geometry and route-specific fill rules,Fitting Type,Source / boundary,Merge,Branch/reducer/drop-out unknowns stay explicit rather than guessed.
+NOTE,Calculator engines remain in Cable_Tray_Calculator_MAIN.xlsx; database contains reusable source/rule data only.,,,Do not merge formula engines as database records.,

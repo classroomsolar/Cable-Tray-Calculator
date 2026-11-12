@@ -1,0 +1,30 @@
+﻿18 — CABLE TRAY SYSTEM SCHEDULE,,,,,,,,,
+"Dedicated schedule linked to the existing BOM, routing, structural, cover, grounding and cleat engines.",,,,,,,,,
+,,,,,,,,,
+Category,Item,Manufacturer,Catalog / Engineering ID,Qty,Unit,Engineering State,Procurement / Approval State,Basis,Source
+Tray,Straight tray sections,Eaton B-Line,46ASB-36-240,100,ea,PASS,REVIEW REQUIRED,"36-in aluminum solid-bottom Series 46, 20-ft section; manufacturer part-number matrix and Series 46 load/span are source-backed.",Eaton Series 1–5 primary catalog; exact online SKU page for 46ASB-36-240 not independently found
+Splicing,Expansion splice kits,Eaton B-Line,9A-1016,30,pair,PASS,PASS,6-in aluminum expansion splice pair; thermal-expansion quantity from engine.,Eaton Series 2–5 aluminum accessories
+Supports,Base support / hanger stations,Eaton B-Line / Project Structure,9G-5536-22SHA,101,station,PASS,REVIEW REQUIRED,"36-in heavy-duty trapeze kit: 46-in channel, 1350-lb uniform load, designed for 1/2-in threaded rod. Final top attachment/rod length by structural design.",Eaton Series 2–5 heavy-duty trapeze support table
+Supports,Expansion-splice local support stations,Eaton B-Line / Project Structure,9G-5536-22SHA,60,station,PASS,REVIEW REQUIRED,Same verified 36-in support kit used for expansion-splice local support stations; final location follows expansion-joint installation geometry.,Eaton Series 2–5 / NEMA VE 2
+Supports,Hold-down anchor clamps,Eaton B-Line,9A-1206,62,ea,PASS,PASS,Aluminum tray clamp/guide model applied at fixed-anchor planning points; two pieces per tray location.,Eaton Series 2–5 aluminum accessories
+Supports,Expansion guide clamps,Eaton B-Line,9A-1205,140,ea,PASS,PASS,Aluminum guide clamp model at thermal guide locations; two pieces per tray location.,Eaton Series 2–5 aluminum accessories
+Grounding,Grounding clamps,Eaton B-Line,9A-2130,100,ea,PASS,PASS,One listed clamp per tray section where wire EGC is bonded to tray,NEMA VE 2 / Eaton
+Covers,Straight tray covers,Eaton B-Line,807A-36-144,167,ea,PASS,PASS,12-ft solid flanged aluminum straight-section cover.,Eaton exact SKU 807A-36-144
+Covers,Straight-section cover clamps,Eaton B-Line,9A-36-9064,501,ea,PASS,REVIEW REQUIRED,Outdoor heavy-duty aluminum cover clamp for 36-in tray / 6-in side rail. Baseline quantity uses half standard clamp count; extreme wind remains project-specific.,Eaton exact SKU 9A-36-9064 + NEMA/Eaton clamp guidance
+Covers,Cover joint strips,Eaton B-Line,99-9980-36,166,ea,PASS,PASS,Between adjacent straight cover sections.,Eaton cover accessories
+Covers,Fitting covers / fitting cover clamps,Eaton B-Line,807A-36-90HB24 (10 ea); 807A-36-45HB24 (8 ea); fitting clamps 9A-36-9064 (36 ea),18,ea / lot,PASS,REVIEW REQUIRED,Aluminum solid fitting covers use the 807A cover family with the matching fitting suffix; outdoor heavy-duty clamp demand shown at baseline manufacturer/NEMA quantity.,Eaton Series 2–5 aluminum covers/accessories
+Segregation,Straight barrier sections,Eaton B-Line,75A-144,167,ea,PASS,PASS,12-ft continuous aluminum divider; exact catalog number source-backed.,Eaton primary 75A-144 submittal
+Cable Exit,Trough / cable-exit drop-outs,Eaton B-Line,9A-1104T-36,10,ea,PASS,PASS,Rounded trough/solid-bottom cable exit; hardware included.,Eaton aluminum Series 2–5 accessories
+Support Hardware,Threaded-rod drops,Eaton B-Line,1/2-13 ATR — LENGTH BY PROJECT ELEVATION,430,rod drops,PASS,REVIEW REQUIRED,"Eaton heavy-duty trapeze kit is designed for 1/2-in threaded rod; quantity is calculated, rod length and top attachment are structural/project inputs.",Eaton Series 2-5 Trapeze Support Kit
+Fitting,Horizontal 90° Elbow,Eaton B-Line,6ASB-36-90HB24,10,ea,PASS,REVIEW REQUIRED,Within 2 ft each extremity + 45° arc support.,Eaton Series 2–5 fitting part-number matrix; solid-bottom aluminum pattern
+Fitting,Horizontal 45° Elbow,Eaton B-Line,6ASB-36-45HB24,8,ea,PASS,REVIEW REQUIRED,Within 2 ft each extremity; arc support except 12-in radius exception.,Eaton Series 2–5 fitting part-number matrix; solid-bottom aluminum pattern
+Cleats,Selected fixed cable cleats,CMP,See CLEAT_ENGINE row-level part schedule,6099,ea,PASS,PASS,Circuit-specific cleat family/part/spacing,CMP manufacturer data / CLEAT_ENGINE
+Supports,Local fitting-support stations,Eaton B-Line / Project Structure,9G-5536-22SHA,54,station,PASS,REVIEW REQUIRED,Conservative local support stations for active fittings; no overlap credit with base supports.,ROUTE_FITTINGS / BOM
+SCHEDULE SUMMARY,,,,,,,,,
+Active scheduled lines,18,,,,,,,,
+Engineering FAIL / INPUT REQUIRED lines,0,,,,,,,,
+Approval / procurement review lines,9,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,

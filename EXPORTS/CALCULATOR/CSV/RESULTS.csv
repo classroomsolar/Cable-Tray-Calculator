@@ -1,0 +1,92 @@
+﻿02 — FINAL ENGINEERING RESULTS,,,,,,,
+This page separates CALCULATED ENGINEERING RECOMMENDATIONS from RELEASE / PROCUREMENT GATES. REVIEW REQUIRED or INPUT REQUIRED does not erase calculations that can be made safely from the entered data.,,,,,,,
+,,,,,,,
+ENGINEERING CALCULATION RELEASE,,,,,WHY THIS SYSTEM WAS SELECTED,,
+PASS,,,,,Decision,Calculator Logic,Engineering Meaning
+ENGINEERING CALCULATIONS COMPLETE — numerical/design checks passed. Procurement/IFC approvals are tracked separately.,,,,,Tray type,Power cable population -> Ladder; small non-power-only population may use channel; EMI/RFI may drive solid bottom.,"Tray type is derived from use and cable population, not user preference."
+,,,,,Width / depth,NEC Article 392 fill branches + real cable OD/area + future spare -> next commercial manufacturer size.,No imaginary tray width is returned.
+CALCULATED / RECOMMENDED CABLE-TRAY SYSTEM,,,,,Material / finish,"Environment, wet/dry, corrosion severity, temperature and EMI/RFI requirements.",Material is selected from application conditions.
+Engineering Output,Selected / Calculated Value,Units / State,Basis,,Mechanical product,Cable load + spare + project loads + support constraint -> verified manufacturer load/span product.,The workbook filters actual product data.
+NEC Edition,2020,edition,Project input,,Fittings,Route geometry + largest verified cable bend radius -> fitting radius and fitting family.,Cable bending is checked before fitting selection.
+Included Circuits,8,count,Step 2 cable engine,,Expansion,"Route length + material + design temperature differential -> NEMA expansion spacing, anchors and guides.",Expansion hardware is calculated when needed.
+Tray Type,Solid Bottom,,Step 3,,Cleats,Single-core power + formation + cable OD/spacing + fault duty -> electrodynamic force -> tested CMP family/spacing.,"Cleat spacing is calculated, not typed by the user."
+Manufacturer / Product Basis,Eaton B-Line,,Step 6,,Grounding/accessories,OCPD/GF setting + tray metal area + grounding path + covers/barriers/interfaces.,"Grounding, bonding and accessories are selected as part of the tray system."
+Straight Tray Model / Procurement Status,46ASB-36-240,,Eaton Series 46 aluminum solid-bottom catalog pattern selected from manufacturer nomenclature plus verified Series 46 geometry/load/span data; exact standalone SKU-page verification remains procurement review.,,,,
+Material,Aluminum,,Step 5,,,,
+Finish / Grade,Mill Finish / Bare Aluminum,,Step 5,,WHAT STILL NEEDS USER / ENGINEER ATTENTION,,
+Inside Width — selected or calculated minimum,36,in,Project-selected 36-in inside width; engineering minimum is reported separately.,,Gate,Current State,What to Do
+Loading Depth — selected or minimum required,5.08,in,Selected product family loading depth; project side-rail requirement is 6 in.,,Cable identity / source,REVIEW REQUIRED,Power cable is exact-source verified; EGC product identity and final fiber approval remain review-gated.
+Rung Spacing,N/A,in / N/A,Step 3/product,,Tray-type decision,PASS,Provide circuit/project facts only if this gate does not pass.
+Support Span — verified product only,20,ft,Step 6 verified product,,NEC fill / width,PASS,Check project cable grouping / code branch if review-gated.
+Required Tray-Carried UDL,23.50286,lb/ft,Cable load + spare + structural project loads,,Material / environment,PASS,Confirm severe environment / special temperature source when required.
+Published Allowable UDL — verified product only,103,lb/ft,Series 46 published load/span basis; current cable load is below published allowable.,,Mechanical product,REVIEW REQUIRED,Series 46 pattern/load-span is source-backed; exact standalone solid-bottom SKU page/unit weight remains procurement review.
+Tray Self-Weight — verified product only,NOT VERIFIED — NOT USED IN RELEASE,lb/ft / state,Exact solid-bottom unit weight not independently verified; intentionally not invented.,,Bending / fittings,PASS,Obtain missing manufacturer bend-radius data or route fitting detail.
+Straight Section Length — verified product only,20,ft,Step 6,,Route fittings,PASS,Current 90°/45° solid-bottom aluminum fitting identifiers are catalog-pattern verified; they are not mislabeled as exact SKU-page matches.
+NEC Minimum Width,18,in,Step 4,,Expansion / supports,REVIEW REQUIRED,Expansion and clamp/guide families are source-backed; final building attachment and threaded-rod length remain structural design items.
+Engineering Width Target w/ Spare,27.805,in,Step 4,,Cable cleats,PASS,Provide fault duty/duration only for circuits where cleat restraint applies.
+Future Spare Capacity,0,%,Project input,,Grounding / accessories,REVIEW REQUIRED,"Dedicated wire EGC governs. Aluminum cover, divider, grounding clamp and drop-out families are source-backed; high-wind cover restraint remains project-specific."
+Minimum Fitting Radius,24,in / N/A,Step 7,,BOM / procurement,REVIEW REQUIRED,"Remaining reviews: catalog-pattern tray/fittings, EGC/fiber approval, structural attachment/rod length, and high-wind cover restraint."
+Straight Sections,100,ea,Step 8,,Final NEC ampacity,PASS,Resolve any FAIL / INPUT REQUIRED / REVIEW REQUIRED circuit before release.
+Total Discrete Fittings,28,ea,Step 8,,,,
+Support Planning Quantity,155,ea,Step 8 conservative,,,,
+Expansion Splice Kits,30,ea,Step 9,,,,
+Hold-Down / Anchor Points,31,ea,Step 9,,,,
+Expansion Guide Points,70,ea,Step 9,,,,
+Grounding Path,WIRE EGC,,Step 11,,,,
+NEC Minimum Wire EGC Size,3/0 AWG,,"Minimum sizing reference only; actual project EGC schedule is 250 kcmil Al, 250 kcmil Al, and 2/0 Al.",,,,
+Tray-as-EGC Qualification,N/A — dedicated wire EGC governs,,Step 11,,,,
+Cover / Divider Recommendation,SOLID ALUMINUM COVER — 2000 ft; 167 × 807A-36-144 straight covers; 501 × 9A-36-9064 baseline heavy-duty clamps; 36 fitting-clamp demand; 167 × 75A-144 straight dividers + 18 × 75A-90HBFL fitting-divider pieces. High-wind clamp quantity remains REVIEW REQUIRED.,,Step 11,,,,
+Cable-Cleat Applicable Circuits,3,count,Step 10,,,,
+Cable-Cleat Recommendation,PASS — 6099 fixed cleats total; max force 53.6 kN/m; circuit-specific part/spacing in CLEAT_ENGINE,,Current filled case uses source-backed trefoil selection; exact row-level part and spacing remain visible in CLEAT_ENGINE.,,,,
+BOM Release,REVIEW REQUIRED,,Step 12,,,,
+,,,,,,,
+FINAL AMPACITY CHECK,,,,,,,
+Metric,Value,Units / State,Meaning,,,,
+Ampacity Release,PASS,status,FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS,,,,
+Power Circuits Checked,3,count,Every included power circuit,,,,
+PASS Circuits,3,count,Governing allowable >= required current,,,,
+FAIL Circuits,0,count,Electrically undersized / hard failure,,,,
+INPUT REQUIRED Circuits,0,count,Missing required electrical fact,,,,
+REVIEW REQUIRED Circuits,0,count,Code/source/configuration review,,,,
+Minimum Calculated Governing Allowable,621.5602204873697,A,Lowest valid governing circuit ampacity,,,,
+Maximum Calculated Utilization,0.630992761558121,pu,Required current / governing allowable,,,,
+,,,,,,,
+AUDIT REMEDIATION / INSTALLATION CONTROLS,,,,,,,
+Parallel single-conductor layout reviews,0,count,Must be zero for full ampacity release.,,,,
+Grounding decision reason,18,,Explains why tray-as-EGC qualifies or is rejected.,,,,
+Cover-clamp basis,"NEMA VE 2 Table 3-3: 6 standard clamps per 10/12-ft straight cover section (4 per 6-ft section); heavy-duty cover clamp uses half that quantity. Outdoor/high-wind service remains a wind-load review. The 18-in interval in NEMA VE 2 §4.5 applies to cable fastening on vertical runs, not to cover clamps.",,Uses NEMA VE 2 Table 3-3 / Eaton quantities.,,,,
+Vertical cable-fastening stations,0,stations,"18-in typical interval applies to cable fastening, not cover clamps.",,,,
+Cleat formation support,CMP trefoil families + CMP Sapphire SHDSS for qualifying three-phase flat formation; single-phase/DC force/product model remains REVIEW REQUIRED.,,Trefoil + three-phase flat can be source-backed; single-phase/DC remain review-gated.,,,,
+INPUT / CALCULATION DIAGNOSTICS,,,,,,,
+Diagnostic,State / Value,Meaning,Action,,,,
+Active Circuits,8,Circuits actually included by Auto/Yes logic,"If zero, enter circuit data or set Include = Yes.",,,,
+Cable Data Release,REVIEW REQUIRED,Physical/source readiness from the cable engine,Check INPUTS right-side diagnostic columns.,,,,
+NEC Ampacity Release,PASS,Edition-specific NEC ampacity engine,Resolve only the affected circuit if not PASS.,,,,
+Overall Engineering Release,PASS,Integrated engineering release hierarchy,FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS.,,,,
+Selected NEC Edition,2020,The edition feeding the ampacity router,Must match the project basis.,,,,
+RMS-to-Peak Multiplier,1,Used only when RMS Sym kA is selected,Enter X/R from the study or a study-provided manual multiplier.,,,,
+VOLTAGE-DROP AUTO-UPSIZING,,,,,,,
+Metric,Value,Units / State,Meaning,,,,
+Voltage Drop Release,PASS,status,Existing current-conductor VD release; unchanged by the auto-upsize recommendation.,,,,
+Auto VD Upsize Recommendations,0,count,Smallest source-verified compatible larger conductor candidates.,,,,
+Unresolved Upsize Reviews,0,count,No unique verified compatible larger part meets the entered VD limit.,,,,
+Design Boundary,RECOMMENDATION ONLY,state,Apply the recommended part/size to the circuit. NEC ampacity release logic remains independent and unchanged.,,,,
+,,,,,,,
+SUPPLEMENTAL ENGINEERING STUDIES — CORE TRAY RELEASE REMAINS SEPARATE,,,,,,,
+Study,State,Role,What to do,,,,
+Voltage Drop,PASS,Electrical design check,Resolve if the project applies a voltage-drop criterion.,,,,
+SC Thermal,REVIEW REQUIRED,Electrical fault withstand check,Resolve before final cable/protection release when applicable.,,,,
+Cable Pull,REVIEW REQUIRED,Installation planning,Resolve before installation when a pulling study is required.,,,,
+Optimizer,REVIEW REQUIRED,Advisory alternative ranking,Optional; it never overrides product qualification.,,,,
+Combined Supplemental Readiness,REVIEW REQUIRED,Informational only; Core Tray Release is shown above and remains authoritative.,,,,,
+,,,,,,,
+ADDITIVE ENGINEERING RESULTS,,,,,,,
+Metric,Value,State,Engineering Basis,Source / Boundary,,,
+Structural working load,23.503 lb/ft,PASS,Cable + exact cover + project environmental/concentrated loads,STRUCTURAL_LOADING,,,
+Tray load utilization,22.8%,PASS,Working load / selected tray allowable UDL,STRUCTURAL_LOADING / PRODUCT_SELECT,,,
+Support reaction / utilization,470.1 lb / 34.8%,PASS,Uniform working load × selected span versus verified trapeze support,STRUCTURAL_LOADING,,,
+Fitting geometry release,PASS,PASS,Radius + width/depth continuity,FITTING_FILL,,,
+Fitting route-specific approval,REVIEW REQUIRED,REVIEW REQUIRED,Branch/reducer/drop-out cable assignment,FITTING_FILL,,,
+Measured section layout,27.805 / 36.0 in,PASS,Arrangement-aware used width versus selected tray width,LAYOUT_ENGINE,,,
+Tray schedule state,PASS — APPROVALS OPEN,PASS,Dedicated system schedule,TRAY_SCHEDULE,,,
+Formal code-check state,PASS,REVIEW REQUIRED,Calculation release separated from project approvals,CODE_CHECK_REPORT / QA_RELEASE,,,

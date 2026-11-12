@@ -1,0 +1,17 @@
+﻿11 — CABLE BENDING / FITTING RADIUS,,,,,
+,,,,,
+Metric,Value,Status,Engineering Basis,Source,Action / Note
+Radius-type fitting count,18,INFO,HB / Tee / Cross / Wye / VI / VO / VT route count,INPUTS,
+Drop-out / cable-exit count,10,INFO,Cable exits also require cable bend/protection review,INPUTS,
+Largest verified cable bend radius,23.4,INFO,Maximum verified manufacturer cable minimum bend radius,CABLE_ENGINE,Manufacturer minimum bend radius governs fitting geometry.
+Included cable rows missing bend-radius data,0,INFO,Blank manufacturer bend data is not guessed,CABLE_ENGINE,A missing value does not mean zero bend radius.
+Auto tray type,Solid Bottom,INFO,Step 3,TRAY_TYPE,
+Selected tray product model,46ASB-36-240,INFO,Step 6 exact product,PRODUCT_SELECT,
+Selected tray width,36,INFO,Step 6 exact product,PRODUCT_SELECT,
+Selected product rung spacing,N/A,INFO,Step 6 exact product,PRODUCT_SELECT,
+Minimum required fitting radius,24,46ASB-36-240,Next real Eaton fitting radius >= cable requirement,Eaton B-Line catalog,Ladder / solid-bottom fittings use 12/24/36/48-in standard radius options; ventilated channel is limited to 12/24-in fitting radii.
+Fitting radius status,PASS,36,Available radius versus verified cable bend requirement,Step 7,
+Cable bend-source status,PASS,N/A,Requires verified bend data when radius fittings / exits exist,Step 7,"If a used fitting/exit depends on a cable whose bend radius is not verified, final release stops."
+Rung / bend compatibility,PASS,24,9-in standard fittings; cable bend must not be violated,Eaton B-Line catalog + manufacturer cable data,Eaton notes large power-cable bend radii must not be violated; fitting rung spacing is normally 9 in.
+Fitting family prefix,6ASB,PASS,Derived only for exact source-backed Eaton families,Eaton B-Line catalog,Series 46 -> 6A fitting family; Series 24 -> 4A. Other families remain source-gated.
+STEP 7 RELEASE,PASS,PASS,Worst applicable bend / fitting gate,Step 7,

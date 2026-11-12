@@ -1,0 +1,14 @@
+﻿15 — CABLE CLEAT RELEASE SUMMARY,,,,,
+,,,,,
+Metric,Value,Status,Meaning,Source,Action
+Cleat-applicable circuit rows,3,INFO,Single-conductor power rows,CLEAT_ENGINE,
+Trefoil rows,3,INFO,Auto product selection supported,CLEAT_ENGINE,
+Flat / other rows,0,N/A,Three-phase flat rows can use source-backed CMP Sapphire SHDSS when test envelope fits; single-phase/DC remain review-gated.,CLEAT_ENGINE,"For single-phase/DC, obtain an arrangement-specific short-circuit restraint design/product basis."
+Maximum calculated electrodynamic force,53629.11366848375,INFO,Governing circuit force,CLEAT_ENGINE,
+Selected cleats total,6099,INFO,Total selected fixed cleats; trefoil quantities include parallel sets and flat Sapphire quantities include all individual phase cables.,CLEAT_ENGINE,
+Fixing packs total,6099,INFO,One fixing pack per selected fixed cleat,CMP catalog,
+Isolation pads total,6099,INFO,Where selected cleat / tray metals are dissimilar,CMP catalog,
+Rows requiring 300mm bend-zone spacing,3,INFO,Applicable circuits when route has direction changes,CMP good installation practice,
+INPUT REQUIRED rows,0,PASS,Missing fault/spacing/part inputs,CLEAT_ENGINE,
+REVIEW REQUIRED rows,0,PASS,"Flat formation, duration >0.1s, or source/project review",CLEAT_ENGINE,
+STEP 10 RELEASE,PASS,PASS,FAIL > INPUT REQUIRED > REVIEW REQUIRED > PASS,CLEAT_ENGINE,

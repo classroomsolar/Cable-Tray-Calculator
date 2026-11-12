@@ -1,0 +1,31 @@
+﻿12 — ROUTE FITTINGS / SUPPORT LOCATIONS,,,,,,,,,,,
+Fitting support quantities are conservative planning stations. Overlap optimization is not credited. Exact field support placement remains coordinated with structure and manufacturer instructions.,,,,,,,,,,,
+,,,,,,,,,,,
+Item,Qty,Radius in,Catalog / Engineering Identifier,Exact Part Status,Connection Interfaces,Verification Tier,Source,Reason / Requirement,Procurement Note,Minimum Local Support Stations,Support Count State
+Horizontal 90° Elbow,10,24,6ASB-36-90HB24,PASS,20,CATALOG_PATTERN_VERIFIED,NEMA VE 2 §3.5.1 / Eaton catalog,Within 2 ft each extremity + 45° arc support.,ENGINEERING IDENTIFIED,30,PASS
+Horizontal 45° Elbow,8,24,6ASB-36-45HB24,PASS,16,CATALOG_PATTERN_VERIFIED,NEMA VE 2 §3.5.1 / Eaton catalog,Within 2 ft each extremity; arc support except 12-in radius exception.,ENGINEERING IDENTIFIED,24,PASS
+Horizontal 30° Elbow,0,24,N/A,N/A,0,N/A,NEMA VE 2 §3.5.1 / Eaton catalog,Within 2 ft each extremity; arc support except 12-in radius exception.,N/A,0,N/A
+Horizontal Tee,0,24,N/A,N/A,0,N/A,NEMA VE 2 §3.5.1 / Eaton catalog,12-in radius: 3 openings; larger radii add local side-rail support planning.,N/A,0,N/A
+Horizontal Cross,0,24,N/A,N/A,0,N/A,NEMA VE 2 §3.5.1 / Eaton catalog,12-in radius: 4 openings; larger radii add local side-rail support planning.,N/A,0,N/A
+Horizontal Wye,0,24,N/A,N/A,0,N/A,NEMA VE 2 §3.5.1 / Eaton catalog,3 openings + side-branch arc support.,N/A,0,N/A
+Reducer,0,N/A,N/A,N/A,0,N/A,NEMA VE 2 §3.5.1 / Eaton catalog,Within 2 ft of each fitting extremity.,N/A,0,N/A
+Vertical Inside Bend,0,24,N/A,N/A,0,N/A,NEMA VE 2 §3.5.1 / Eaton catalog,Supported at ends / top + lower extremity per NEMA arrangement.,N/A,0,N/A
+Vertical Outside Bend,0,24,N/A,N/A,0,N/A,NEMA VE 2 §3.5.1 / Eaton catalog,Supported at ends / top + lower extremity per NEMA arrangement.,N/A,0,N/A
+Vertical Tee,0,24,N/A,N/A,0,N/A,NEMA VE 2 §3.5.1 / Eaton catalog,Within 2 ft of each fitting extremity.,N/A,0,N/A
+Drop-Out / Cable Exit,10,N/A,9A-1104T-36,PASS,0,CATALOG_PATTERN_VERIFIED,NEMA VE 2 / manufacturer accessory instructions,No automatic NEMA local-support count assigned; accessory-specific review.,ENGINEERING IDENTIFIED,0,REVIEW REQUIRED — ACCESSORY / FIELD SUPPORT DETAIL
+Adjustable Direction Change,0,N/A,N/A,N/A,0,N/A,NEMA VE 2 / manufacturer accessory instructions,No automatic NEMA local-support count assigned; accessory-specific review.,N/A,0,N/A
+,,,,,,,,,,,
+,,,,,,,,,,,
+ROUTE QUANTITY SUMMARY,,,,,,,,,,,
+Total route length,2000,ft,Project input,INPUTS,,,,,,,
+Selected straight-section length,20,ft,Selected product,PRODUCT_SELECT,,,,,,,
+Straight sections required,100,ea,ROUNDUP(route/section length),Step 8,,,,,,,
+Straight-to-straight interfaces,99,interfaces,"MAX(sections-1,0)",Step 8,,,,,,,
+Fitting connection interfaces,36,interfaces,Sum item interfaces,Step 8,,,,,,,
+Total connection interfaces,135,interfaces,Straight + fitting interfaces,Step 8,,,,,,,
+Total discrete fittings,28,ea,Sum fitting quantities,Step 8,,,,,,,
+Base supports / hangers,101,ea,Mechanical/product engine,PRODUCT_SELECT,,,,,,,
+Local fitting-support planning stations,54,ea,NEMA source rules; no overlap credit,Step 8,,,,,,,
+Conservative support planning quantity,155,ea,Base + local stations,Step 8,,,,,,,
+Fitting exact-part unresolved count,0,count,Applicable rows not PASS,Step 8,,,,,,,
+STEP 8 RELEASE,PASS,status,Route/product/bend/part gates,Step 8,,,,,,,

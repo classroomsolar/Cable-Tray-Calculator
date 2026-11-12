@@ -1,0 +1,23 @@
+﻿13 — THERMAL EXPANSION / SUPPORTS,,,,,
+,,,,,
+Metric,Value,Status,Engineering Basis,Source,Action / Note
+Selected tray material,Aluminum,INFO,Step 5,MATERIAL,
+Total route length,2000,INFO,Project fact,INPUTS,
+Minimum design temperature,-0.6,INFO,Project fact,INPUTS,
+Maximum design temperature,47,INFO,Project fact,INPUTS,
+Temperature differential,47.6,INFO,Tmax - Tmin,Step 9,
+Temperature differential,85.68,INFO,ΔC × 1.8,Step 9,
+Conservative published ΔT bracket,100,INFO,Next higher NEMA table row; no interpolation,NEMA VE 2 Table 3-2,Uses the next higher 25°F bracket; avoids unconservative interpolation.
+Expansion material class,Aluminum,PASS,Aluminum / Steel / unsupported,Step 9,"NEMA table directly provides Steel, Aluminum, Fiberglass. Stainless spacing is not silently treated as carbon steel."
+Maximum expansion-joint spacing,65,PASS,1-in movement basis,NEMA VE 2 Table 3-2,
+Required expansion splice kits,30,INFO,"MAX(ROUNDUP(route/max spacing)-1,0)",Step 9,Planning count consistent with protected prior engine.
+Preferred expansion-splice product,9A-6016 HD Expansion Splice (preferred option),PASS,Series-specific source-backed option,Eaton B-Line catalog,Series 46 aluminum source lists 9A-6016 heavy-duty expansion splice. Standard alternative remains source-gated.
+Expansion-splice support stations,60,INFO,Traditional planning = 2 per expansion splice,NEMA VE 2 §3.4.2,NEMA traditional expansion splice support planning. Eaton heavy-duty option may eliminate these only when installed per its quarter-span instructions.
+Hold-down anchor planning points,31,INFO,One fixed point per thermal segment,NEMA VE 2 §3.4.2,Nearest support to midpoint between expansion splices.
+Expansion-guide planning points,70,INFO,Remaining base support points,NEMA VE 2 §3.4.2,All other supports guide longitudinal motion.
+Expansion bonding jumpers,30,INFO,Metal expansion joints require bonding continuity,NEMA VE 2 §3.4.2,Metal expansion joints require bonding for electrical continuity.
+Other bonding discontinuities,0,INFO,Route input,INPUTS,
+Total bonding-jumper planning qty,30,INFO,Expansion + other discontinuities,Step 9,
+Thermal expansion status,PASS,PASS,Temperature/material/table applicability,Step 9,
+Support / guide status,REVIEW REQUIRED,REVIEW REQUIRED,Requires selected support/product geometry,Step 9,
+STEP 9 RELEASE,REVIEW REQUIRED,REVIEW REQUIRED,Worst expansion/support gate,Step 9,

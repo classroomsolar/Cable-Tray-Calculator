@@ -1,0 +1,9 @@
+﻿Lookup Key,Thermal Class,Material,k A√s/mm²,Max Initial Temp °C
+PVC <=300 mm2|Copper,PVC <=300 mm2,Copper,115,70
+PVC <=300 mm2|Aluminum,PVC <=300 mm2,Aluminum,76,70
+PVC >300 mm2|Copper,PVC >300 mm2,Copper,103,70
+PVC >300 mm2|Aluminum,PVC >300 mm2,Aluminum,68,70
+EPR/XLPE|Copper,EPR/XLPE,Copper,143,90
+EPR/XLPE|Aluminum,EPR/XLPE,Aluminum,94,90
+Rubber|Copper,Rubber,Copper,141,60
+Rubber|Aluminum,Rubber,Aluminum,93,60

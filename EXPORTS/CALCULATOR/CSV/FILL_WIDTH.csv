@@ -1,0 +1,35 @@
+﻿08 — NEC FILL / TRAY WIDTH,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Metric,Value,Units / Status,Basis,Source,,,,,,,ARRANGEMENT-AWARE PHYSICAL TRAY GEOMETRY,,,
+Selected NEC edition,2020,edition,Project input,INPUTS,,,,,,,Metric,Value,Units / Status,Basis
+Auto tray type,Solid Bottom,type,Step 3,TRAY_TYPE,,,,,,,Power circuit envelope width,11.7,in,Sum of arrangement-aware circuit envelopes
+Future spare capacity,0,fraction,Project input,INPUTS,,,,,,,Inter-power-circuit spacing,8.385,in,Maintains selected center-spacing basis between adjacent power circuit envelopes
+MV diameter demand,17.549999999999997,in,All included >2000 V cable diameter demand,CABLE_ENGINE,,,,,,,Other cable envelope width,4.720000000000001,in,EGC/control/communication/fiber raw cable envelopes
+LV MC >=4/0 diameter demand,0,in,Large multiconductor demand,CABLE_ENGINE,,,,,,,Other-to-other cable gaps,1,in,AUTO planning gap from ENGINEERING_DEFAULTS
+LV MC <4/0 area demand,0.36191147369354415,in²,Small multiconductor demand,CABLE_ENGINE,,,,,,,Power-to-other separation,2,in,AUTO planning separation from ENGINEERING_DEFAULTS
+LV SC 1/0-4/0 diameter demand,1.14,in,Single-conductor diameter branch,CABLE_ENGINE,,,,,,,Total arrangement geometry width,27.805,in,Power + spacing + other cables + separation
+LV SC 250-900 area demand,2.6956435764127225,in²,Single-conductor area-table branch,CABLE_ENGINE,,,,,,,Maximum arrangement geometry height,3.63874953741,in,Trefoil vertical envelope or cable OD
+LV SC >=1000 diameter demand,0,in,Large single-conductor branch,CABLE_ENGINE,,,,,,,Governing minimum width before spare,27.805,in,"MAX(NEC minimum, arrangement geometry)"
+Non-power cable area,4.07825850325759,in²,Control/instrument/communication/fiber area,CABLE_ENGINE,,,,,,,Geometry status,PASS,status,All included cable arrangement geometry must resolve
+Power physical qty,9,count,Power physical cable count,CABLE_ENGINE,,,,,,,EGC physical cable count,3,,
+Non-power physical qty,5,count,Non-power physical count,CABLE_ENGINE,,,,,,,Fiber physical cable count,2,,
+NEC minimum inside width,18,in,First candidate with governing utilization <=1,Candidate table,,,,,,,Project EGC-to-EGC gap demand,1,,
+Engineering width target,27.805,in,"MAX(NEC minimum, arrangement geometry) / remaining capacity",Step 4,,,,,,,Fiber internal gap demand,0,,
+Recommended commercial width,36,in,Next real standard width,Eaton B-Line standard widths,,,,,,,Layout profile,Trefoil + EGC + Barrier + Fiber,,
+Minimum loading depth,3.63874953741,in,"Largest cable OD or arrangement vertical envelope, whichever governs",Engineering geometry,,,,,,,,,,
+STEP 4 RELEASE,PASS,status,Step 2 + Step 3 + width resolution,Step 4,,,,,,,,,,
+AUTO minimum commercial width,30,,,,,,,,,,,,,
+Project-selected width,36,,,,,,,,,,,,,
+,,,,,,Candidate Width,MC Util.,SC Util.,Governing Util. / Status,,,,,
+,,,,,,2,0.18095573684677208,0.57,FAIL,,,,,
+,,,,,,4,0.10340327819815547,0.285,FAIL,,,,,
+,,,,,,6,0.06580208612609893,0.18999999999999997,FAIL,,,,,
+,,,,,,8,0.05170163909907773,0.1425,FAIL,,,,,
+,,,,,,9,0.04523893421169302,0.12666666666666665,FAIL,,,,,
+,,,,,,12,0.032901043063049466,0.09499999999999999,FAIL,,,,,
+,,,,,,16,0.024959411978865115,0.07125,FAIL,,,,,
+,,,,,,18,0.021934028708699645,0.06333333333333332,PASS,,,,,
+,,,,,,20,0.019562782361813198,0.056999999999999995,PASS,,,,,
+,,,,,,24,0.016450521531524733,0.047499999999999994,PASS,,,,,
+,,,,,,30,0.013160417225219788,0.038,PASS,,,,,
+,,,,,,36,0.010967014354349823,0.03166666666666666,PASS,,,,,

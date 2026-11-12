@@ -1,0 +1,17 @@
+﻿REFERENCE — NEMA VE 2 EXPANSION TABLE,,,,
+,,,,
+ΔT °F,Steel ft,Aluminum ft,Fiberglass ft,Source
+25,512,260,667,NEMA VE 2-2018 Table 3-2
+50,256,130,333,NEMA VE 2-2018 Table 3-2
+75,171,87,222,NEMA VE 2-2018 Table 3-2
+100,128,65,167,NEMA VE 2-2018 Table 3-2
+125,102,52,133,NEMA VE 2-2018 Table 3-2
+150,85,43,111,NEMA VE 2-2018 Table 3-2
+175,73,37,95,NEMA VE 2-2018 Table 3-2
+,,,,
+Rule,Value,Units / State,Source,Note
+Movement basis,1,in,NEMA VE 2 Table 3-2,Table values provide for 1 in movement.
+Temperature differential,Tmax - Tmin,°F,NEMA VE 2,Use next higher published 25°F bracket; no interpolation.
+Anchoring,Midpoint support,—,NEMA VE 2 §3.4.2,Anchor nearest midpoint between expansion splices.
+Guides,All other support locations,—,NEMA VE 2 §3.4.2,Permit longitudinal movement from fixed point.
+Expansion splice supports,Within 2 ft each side,—,NEMA VE 2 §3.4.2,Unless a system is specifically designed for other placement.

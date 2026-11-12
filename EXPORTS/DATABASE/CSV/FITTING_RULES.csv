@@ -1,0 +1,18 @@
+﻿REFERENCE — FITTING GEOMETRY / ROUTE-SPECIFIC RULES,,,,,,,,
+Rules used by FITTING_FILL. These rules do not fabricate branch cable populations or reducer downstream widths.,,,,,,,,
+,,,,,,,,
+Fitting Type,Radius Check,Width / Depth Check,Route-Specific Fill Requirement,Support / Installation Basis,Automatic State When Qty=0,Source,Boundary,Minimum Local Support Planning Basis
+Horizontal 90° Elbow,Required,Same tray width/depth,No additional branch allocation,Ends + arc support planning,N/A,NEMA VE 2 / manufacturer fitting catalog,Cable minimum bend radius governs.,2 extremities + 1 arc support when radius >12 in
+Horizontal 45° Elbow,Required,Same tray width/depth,No additional branch allocation,Ends + arc support planning,N/A,NEMA VE 2 / manufacturer fitting catalog,Cable minimum bend radius governs.,2 extremities + 1 arc support when radius >12 in
+Horizontal 30° Elbow,Required,Same tray width/depth,No additional branch allocation,Ends + arc support planning,N/A,NEMA VE 2 / manufacturer fitting catalog,Cable minimum bend radius governs.,2 extremities + 1 arc support when radius >12 in
+Horizontal Tee,Required,Same tray width/depth,Branch cable assignment required,Three openings; local support planning,N/A,NEMA VE 2 / manufacturer fitting catalog,Each outgoing branch must independently satisfy fill/geometry.,3 opening supports minimum; larger radius additional support remains review-gated
+Horizontal Cross,Required,Same tray width/depth,Branch cable assignment required,Four openings; local support planning,N/A,NEMA VE 2 / manufacturer fitting catalog,Each outgoing branch must independently satisfy fill/geometry.,4 opening supports minimum; larger radius additional support remains review-gated
+Horizontal Wye,Required,Same tray width/depth,Branch cable assignment required,Three openings + branch arc support,N/A,NEMA VE 2 / manufacturer fitting catalog,Each outgoing branch must independently satisfy fill/geometry.,3 opening supports minimum; larger radius additional support remains review-gated
+Reducer,N/A,Upstream + downstream widths/depths,Downstream cable population / width required,Support near fitting ends,N/A,NEMA VE 2 / manufacturer fitting catalog,Do not assume downstream tray size.,2 fitting extremities
+Vertical Inside Bend,Required,Same tray width/depth,No additional branch allocation,End/top/lower support planning,N/A,NEMA VE 2 / manufacturer fitting catalog,Cable minimum bend radius governs.,2 minimum stations: top/end + lower extremity
+Vertical Outside Bend,Required,Same tray width/depth,No additional branch allocation,End/top/lower support planning,N/A,NEMA VE 2 / manufacturer fitting catalog,Cable minimum bend radius governs.,2 minimum stations: top/end + lower extremity
+Vertical Tee,Required,Same tray width/depth,Branch cable assignment required,Three openings / vertical support planning,N/A,NEMA VE 2 / manufacturer fitting catalog,Branch populations must be known.,3 fitting extremities
+Drop-Out / Cable Exit,Accessory radius vs assigned exiting cable,Tray width compatible,Identify which cables use the exit,Accessory/manufacturer installation,N/A,Manufacturer accessory data,A small rounded drop-out is not assumed adequate for every MV cable.,0 automatic; accessory / field support detail review
+Adjustable Direction Change,Manufacturer geometry required,Manufacturer geometry required,Route cable assignment if used,Manufacturer instructions,N/A,Manufacturer accessory data,No generic geometry is invented.,0 automatic; manufacturer / field support detail review
+,,,,,,,,
+Release hierarchy,FAIL if known geometry violates; INPUT REQUIRED for active branch/reducer data that cannot be derived; REVIEW REQUIRED for project/accessory assignment; PASS otherwise.,,,,,,,

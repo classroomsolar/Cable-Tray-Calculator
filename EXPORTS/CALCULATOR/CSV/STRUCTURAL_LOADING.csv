@@ -1,0 +1,30 @@
+﻿15 — STRUCTURAL / COVER / SUPPORT LOADING ENGINE,,,,,
+"Adds cable dead load, spare allowance, exact/source-backed cover dead load, project environmental load and concentrated-load UDL. Environmental wind/snow/ice values remain project inputs.",,,,,
+,,,,,
+Metric,Value,Status,Engineering Basis,Source,Action / Note
+Current resolved cable load,22.811359999999997,INFO,Cable weight × physical quantity,CABLE_SUMMARY,
+Future spare fraction,0,INFO,Project input,INPUTS,
+Future cable load,22.811359999999997,INFO,Current load / (1-spare),Structural engine,
+Covered route fraction,1,INFO,Covered length / total route,INPUTS,
+Auto cover dead load,0.6915,INFO,Exact verified cover weight when mapped,STRUCTURAL_RULES,
+Manual cover dead load override,0,INFO,Optional user/source override,EASY_INPUT,
+Applied cover dead load,0.6915,INFO,Manual override else exact auto load; prorated by covered fraction,Structural engine,
+Equivalent environmental structural load,0,INFO,Wind / snow / ice / attached material load input,INPUTS,
+Equivalent concentrated-load UDL,0,INFO,Source-backed equivalent UDL input,INPUTS,
+TOTAL WORKING LOAD,23.50286,INFO,Future cable + cover + environmental + concentrated,Eaton / NEMA working-load method,
+NEMA load-class screening,A / <=50 lb/ft,INFO,Historical A/B/C screen only; exact product rating governs,STRUCTURAL_RULES,
+Selected tray allowable UDL,103,INFO,Selected manufacturer load/span,PRODUCT_SELECT,
+Tray load utilization,0.22818310679611647,INFO,Working load / allowable UDL,Structural engine,
+Selected support span,20,INFO,Verified selected product span,PRODUCT_SELECT,
+Estimated interior support reaction,470.05719999999997,INFO,Uniform load × support span,Structural screening,
+36-in HD trapeze support capacity,1350,INFO,Manufacturer uniform-load rating,STRUCTURAL_RULES,
+Support utilization,0.3481905185185185,INFO,Estimated support reaction / kit capacity,Structural screening,
+Cover dead-load source state,PASS — EXACT COVER WEIGHT,PASS,Exact cover mapping or manual override,Structural engine,"If no exact cover weight exists, enter a source-backed manual cover dead load on EASY_INPUT."
+Cover environmental approval,REVIEW REQUIRED — PROJECT WIND/RESTRAINT,REVIEW REQUIRED,High-wind / environmental cover review,Eaton cover guidance,High-wind cover restraint is an approval/design criterion; no wind pressure or clamp spacing is fabricated.
+Numerical tray-load check,PASS,PASS,Working load <= exact selected tray rating,Structural engine,This is the numerical tray load/span check.
+Numerical support-capacity check,PASS,PASS,Estimated reaction <= verified support-kit load,Structural engine,Support-kit capacity is checked only where a verified kit is mapped.
+STRUCTURAL CALCULATION RELEASE,PASS,PASS,FAIL > INPUT REQUIRED > PASS,Structural engine,This release is numerical. Project approvals remain separate in row 27.
+STRUCTURAL / COVER APPROVAL STATE,REVIEW REQUIRED,REVIEW REQUIRED,Project environmental / attachment review only,Structural engine,Approval state covers wind/cover and structural attachment conditions.
+,,,,,
+,,,,,
+,,,,,

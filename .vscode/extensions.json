@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "github.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "GrapeCity.gc-excelviewer",
+    "mechatroner.rainbow-csv",
+    "redhat.vscode-xml"
+  ]
+}

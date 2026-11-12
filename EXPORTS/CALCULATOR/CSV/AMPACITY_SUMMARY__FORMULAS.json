@@ -1,0 +1,22 @@
+{
+  "B4": "COUNTIFS('AMPACITY_ENGINE'!$A$5:$A$44,\"Yes\",'AMPACITY_ENGINE'!$C$5:$C$44,\"Power\")",
+  "C4": "IF(B4=0,\"N/A\",\"INFO\")",
+  "B5": "COUNTIF('AMPACITY_ENGINE'!$AV$5:$AV$44,\"PASS\")",
+  "C5": "IF(B5=B4,\"PASS\",\"INFO\")",
+  "B6": "COUNTIF('AMPACITY_ENGINE'!$AV$5:$AV$44,\"FAIL\")",
+  "C6": "IF(B6=0,\"PASS\",\"FAIL\")",
+  "B7": "COUNTIF('AMPACITY_ENGINE'!$AV$5:$AV$44,\"INPUT REQUIRED\")",
+  "C7": "IF(B7=0,\"PASS\",\"INPUT REQUIRED\")",
+  "B8": "COUNTIF('AMPACITY_ENGINE'!$AV$5:$AV$44,\"REVIEW REQUIRED\")",
+  "C8": "IF(B8=0,\"PASS\",\"REVIEW REQUIRED\")",
+  "B9": "IF(COUNT('AMPACITY_ENGINE'!$AQ$5:$AQ$44)=0,\"\",MIN('AMPACITY_ENGINE'!$AQ$5:$AQ$44))",
+  "C9": "\"INFO\"",
+  "B10": "IF(COUNT('AMPACITY_ENGINE'!$AR$5:$AR$44)=0,\"\",MAX('AMPACITY_ENGINE'!$AR$5:$AR$44))",
+  "C10": "\"INFO\"",
+  "B11": "COUNTIF('AMPACITY_ENGINE'!$AP$5:$AP$44,\"Manufacturer / cable source\")",
+  "C11": "\"INFO\"",
+  "B12": "COUNTIF('AMPACITY_ENGINE'!$AP$5:$AP$44,\"NEC\")+COUNTIF('AMPACITY_ENGINE'!$AP$5:$AP$44,\"NEC = Manufacturer\")",
+  "C12": "\"INFO\"",
+  "B13": "IF(B6>0,\"FAIL\",IF(B7>0,\"INPUT REQUIRED\",IF(B8>0,\"REVIEW REQUIRED\",IF(B4=0,\"N/A\",\"PASS\"))))",
+  "C13": "B13"
+}

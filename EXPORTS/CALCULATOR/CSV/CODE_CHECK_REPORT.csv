@@ -1,0 +1,32 @@
+﻿19 — FORMAL CODE / ENGINEERING CHECK REPORT,,,,,,,
+Cross-module report. Calculation release is separated from procurement / project approvals so source/vendor review does not masquerade as a numerical engineering failure.,,,,,,,
+,,,,,,,
+Check,Current Result,Calculation State,Approval / Source State,Basis / Requirement,Primary Engine,Primary Source,Action
+Project input sanity,PASS,PASS,N/A,Critical contradictory/missing normal-user inputs,QA_RELEASE,NEC/NEMA/project input logic,Correct EASY_INPUT only if FAIL/INPUT REQUIRED.
+Cable identity / physical data,REVIEW REQUIRED,PASS,REVIEW REQUIRED,Exact/approved source data preferred; unresolved procurement identity remains approval-gated,CABLE_SUMMARY / CABLE_ENGINE,Manufacturer/project submittals,Do not guess missing manufacturer values.
+LV/MV/DC/AC tray fill / width,Eng min 27.805 in / selected 36.0 in,PASS,N/A,NEC fill branch + arrangement-aware geometry,FILL_WIDTH,NEC 392 / source-controlled tables,Selected width must meet code + geometry.
+Arrangement / spacing / segregation,PASS,PASS,INFO,Trefoil/flat/EGC/fiber/barrier geometry,FILL_WIDTH / GROUNDING / LAYOUT_ENGINE,Project layout + NEMA/NEC,Confirm project-specific compatibility/segregation where required.
+Fitting geometry / bend radius,PASS,PASS,REVIEW REQUIRED,"Bend radius, width/depth continuity, branch/reducer assignment",FITTING_FILL / BENDS_FITTINGS,Manufacturer bend data + NEMA/Eaton,Resolve only active branch/reducer/drop-out route-specific items.
+Ampacity / derating handoff,PASS,PASS,N/A,Edition-specific NEC ampacity route + ambient/CCC/tray/cover limits,AMPACITY_SUMMARY,NEC 2020 / 2023,PASS required for electrical release.
+Voltage drop,PASS,PASS,Supplemental,Project voltage-drop screen,VOLTAGE_DROP,Manufacturer impedance / project criterion,Supplemental unless project makes it mandatory.
+Structural working load,PASS,PASS,REVIEW REQUIRED,Cable + cover + environmental + concentrated load versus selected tray rating,STRUCTURAL_LOADING / PRODUCT_SELECT,Eaton / NEMA load method,Numerical load check separate from structural attachment approval.
+Support capacity / span,PASS,PASS,REVIEW REQUIRED,Selected span + support reaction versus verified support kit,STRUCTURAL_LOADING / PRODUCT_SELECT,Eaton support table,Final top attachment / rod length by structure.
+Cover dead load / environmental,PASS — EXACT COVER WEIGHT,PASS,REVIEW REQUIRED — PROJECT WIND/RESTRAINT,Exact cover dead load included; wind/snow/ice remain project loads,STRUCTURAL_LOADING,Eaton cover / load guidance,Provide project wind/snow/ice criteria where applicable.
+Fault electromagnetic / cleat,PASS,PASS,N/A,Electrodynamic force + source-backed cleat/spacing selection,CLEAT_SUMMARY / CLEAT_ENGINE,CMP / IEC-derived force logic,PASS required where single-conductor fault restraint applies.
+Short-circuit thermal,REVIEW REQUIRED,REVIEW REQUIRED,Supplemental,Adiabatic conductor withstand screen,SC_THERMAL,IEC/ABB source basis,Resolve when protection/cable thermal release requires it.
+Grounding / tray bonding,Dedicated wire EGC; auto minimum 3/0 AWG; project EGCs 250 kcmil / 250 kcmil / 2/0 Al,PASS,REVIEW REQUIRED — EXACT EGC / FIBER PRODUCT APPROVAL,Wire EGC / tray-as-EGC / clamps / discontinuities,GROUNDING,NEC 250/392 + NEMA/Eaton,Dedicated EGC calculation is resolved. Procurement/source approval for exact EGC/fiber products remains separate.
+Expansion splice / thermal movement,PASS,PASS,REVIEW REQUIRED,Temperature range → expansion joint spacing and support/guide plan,EXPANSION_SUPPORTS,NEMA VE 2 / Eaton,Final structural location/attachment remains project-specific.
+Outdoor / corrosion / material,PASS,PASS,N/A,Environment selects material/finish and corrosion controls,MATERIAL,Manufacturer / project environment,Confirm special chemical/coastal exposure if applicable.
+Routing quantities / fittings,PASS,PASS,REVIEW REQUIRED,"Straight sections, fittings, supports, interfaces",ROUTE_FITTINGS,NEMA / manufacturer,Geometry quantities must match project routing.
+Automatic section / layout,PASS,PASS,Planning aid,Measured zone layout and spare width,LAYOUT_ENGINE,FILL_WIDTH / project layout,Use as layout aid; code/manufacturer rules still govern.
+Tray schedule,PASS,PASS,REVIEW REQUIRED,Dedicated schedule linked to BOM,TRAY_SCHEDULE,Calculator engines,Use for drawings/procurement coordination.
+BOM / procurement,REVIEW REQUIRED,PASS,REVIEW REQUIRED,Calculator-driven system BOM,BOM,Source-controlled product database,Project approvals may remain open without numerical failure.
+OVERALL ENGINEERING CALCULATION RELEASE,PASS,PASS,REVIEW REQUIRED,FAIL/INPUT REQUIRED block calculation release,QA_RELEASE,Integrated calculator,PASS required.
+OVERALL PROCUREMENT / IFC STATUS,REVIEW REQUIRED,PASS,REVIEW REQUIRED,Vendor/submittal/structural/wind/project approvals,QA_RELEASE,Integrated calculator,Close before procurement/IFC as applicable.
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,

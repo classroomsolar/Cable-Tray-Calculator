@@ -1,0 +1,31 @@
+﻿REFERENCE — NEC GROUNDING / EGC TABLES,,,,,,,,,,,,,,,,,,,,,,,
+"These thresholds use the next applicable OCPD / ground-fault setting, not the next lower row. Steel tray is not permitted as EGC above 600 A; aluminum tray is not permitted as EGC above 2000 A; stainless steel tray is not permitted as the EGC.",,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Max OCPD / GF Setting A,Steel Min Metal Area in²,Aluminum Min Metal Area in²,Steel Tray-as-EGC State,Aluminum Tray-as-EGC State,,OCPD Not Exceeding A,Copper EGC,Al / Cu-Clad Al EGC,,Lower Bound A,Copper EGC,Al / Cu-Clad Al EGC,,Lower Bound A,Steel Required in²,Aluminum Required in²,,Tray Width in,2-Digit Code,,Max Loading Depth in,Barrier Prefix,HD Cover Suffix
+60,0.2,0.2,PERMITTED,PERMITTED,,15,14 AWG,12 AWG,,0,14 AWG,12 AWG,,0,0.2,0.2,,6,06,,3.1,73A,9044
+100,0.4,0.2,PERMITTED,PERMITTED,,20,12 AWG,10 AWG,,15.000001,12 AWG,10 AWG,,60.000001,0.4,0.2,,9,09,,4.1,74A,9054
+200,0.7,0.2,PERMITTED,PERMITTED,,30,10 AWG,8 AWG,,20.000001,10 AWG,8 AWG,,100.000001,0.7,0.2,,12,12,,5.2,75A,9064
+400,1,0.4,PERMITTED,PERMITTED,,40,10 AWG,8 AWG,,30.000001,10 AWG,8 AWG,,200.000001,1,0.4,,18,18,,6.2,76A,9074
+600,1.5,0.4,PERMITTED,PERMITTED,,60,10 AWG,8 AWG,,40.000001,10 AWG,8 AWG,,400.000001,1.5,0.4,,24,24,,,,
+1000,,0.6,NOT PERMITTED,PERMITTED,,100,8 AWG,6 AWG,,60.000001,8 AWG,6 AWG,,600.000001,NOT PERMITTED,0.6,,30,30,,,,
+1200,,1,NOT PERMITTED,PERMITTED,,200,6 AWG,4 AWG,,100.000001,6 AWG,4 AWG,,1000.000001,NOT PERMITTED,1,,36,36,,,,
+1600,,1.5,NOT PERMITTED,PERMITTED,,300,4 AWG,2 AWG,,200.000001,4 AWG,2 AWG,,1200.000001,NOT PERMITTED,1.5,,,,,,,
+2000,,2,NOT PERMITTED,PERMITTED,,400,3 AWG,1 AWG,,300.000001,3 AWG,1 AWG,,1600.000001,NOT PERMITTED,2,,,,,,,
+,,,,,,500,2 AWG,1/0 AWG,,400.000001,2 AWG,1/0 AWG,,2000.000001,NOT PERMITTED,NOT PERMITTED,,,,,,,
+,,,,,,600,1 AWG,2/0 AWG,,500.000001,1 AWG,2/0 AWG,,,,,,,,,,,
+EATON / NEMA GROUNDING & BONDING ACCESSORY DATA,,,,,,800,1/0 AWG,3/0 AWG,,600.000001,1/0 AWG,3/0 AWG,,,,,,,,,,,
+Item,Catalog / Rule,Range / Rating,Source,Use,,1000,2/0 AWG,4/0 AWG,,800.000001,2/0 AWG,4/0 AWG,,,,,,,,,,,
+Grounding Clamp,9A-2130,#6 AWG to 250 kcmil,Eaton B-Line Series 2-5 Aluminum accessories,One listed grounding clamp per tray section when wire-type EGC is bonded to the tray; tin-plated aluminum.,,1200,3/0 AWG,250 kcmil,,1000.000001,3/0 AWG,250 kcmil,,,,,,,,,,,
+Bonding Jumper,99-N6,#6 Cu / 200 A,Eaton B-Line catalog,Continuity jumper family.,,1600,4/0 AWG,350 kcmil,,1200.000001,4/0 AWG,350 kcmil,,,,,,,,,,,
+Bonding Jumper,99-N1,#1 Cu / 600 A,Eaton B-Line catalog,Continuity jumper family.,,2000,250 kcmil,400 kcmil,,1600.000001,250 kcmil,400 kcmil,,,,,,,,,,,
+Bonding Jumper,99-30,3/0 Cu / 1200 A,Eaton B-Line catalog,Continuity jumper family.,,2500,350 kcmil,600 kcmil,,2000.000001,350 kcmil,600 kcmil,,,,,,,,,,,
+Bonding Jumper,99-40,4/0 Cu / 1600 A,Eaton B-Line catalog,Continuity jumper family.,,3000,400 kcmil,600 kcmil,,2500.000001,400 kcmil,600 kcmil,,,,,,,,,,,
+Bonding Jumper,99-1620,250 kcmil Cu / 2000 A,Eaton B-Line catalog,Continuity jumper family.,,4000,500 kcmil,750 kcmil,,3000.000001,500 kcmil,750 kcmil,,,,,,,,,,,
+24-in Bonding Jumper,99-N1-24 W/SS6,600 A,Eaton B-Line catalog,Longer expansion/discontinuity option.,,5000,700 kcmil,1200 kcmil,,4000.000001,700 kcmil,1200 kcmil,,,,,,,,,,,
+24-in Bonding Jumper,99-40-24 W/SS6,1600 A,Eaton B-Line catalog,Longer expansion/discontinuity option.,,6000,800 kcmil,1200 kcmil,,5000.000001,800 kcmil,1200 kcmil,,,,,,,,,,,
+24-in Bonding Jumper,99-1620-24 W/SS6,2000 A,Eaton B-Line catalog,Longer expansion/discontinuity option.,,,,,,,,,,,,,,,,,,,
+Barrier Strip Splice,99-9982,Included with Eaton barrier sections,Eaton B-Line catalog,Barrier continuity / joining.,,,,,,,,,,,,,,,,,,,
+Ladder Drop-Out,9A-1104-(tray width),4-in rounded cable-exit radius,Eaton B-Line catalog,Protect cable at ladder-tray exits.,,,,,,,,,,,,,,,,,,,
+Cover Joint Strip,99-9980-(tray width),Flat covers,Eaton B-Line catalog,Join straight flat covers.,,,,,,,,,,,,,,,,,,,
+Standard Aluminum Cover Clamp,9A-9012,"All side-rail sizes, indoor",Eaton B-Line catalog,Standard indoor cover clamp.,,,,,,,,,,,,,,,,,,,
+Heavy-Duty Aluminum Cover Clamp,9A-(width)-90x4,"Side-rail-height specific, outdoor",Eaton B-Line catalog,Recommended outdoor; standard NEMA clamp quantity may be halved.,,,,,,,,,,,,,,,,,,,

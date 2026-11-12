@@ -1,0 +1,24 @@
+# Excel temporary lock & autosave files
+~$*.xlsx
+~$*.xls
+~$*.xlsm
+~$*.xltx
+~$*.xltm
+*.tmp
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor workspace personal settings (keep extension recommendations)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

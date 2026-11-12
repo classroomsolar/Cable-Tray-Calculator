@@ -1,0 +1,15 @@
+﻿09 — MATERIAL / FINISH SELECTION,,,,,
+,,,,,
+Metric,Value,Status,Decision Basis,Source,Engineering Note
+Installation location,Outdoor,INFO,Indoor/outdoor governs coating suitability.,Project,
+Wet / Dry,Dry,INFO,Wet service increases corrosion exposure.,Project,
+Environment severity,High UV,INFO,Severity drives marine/chemical material choice.,Project,
+Corrosive environment?,Yes,INFO,Additional corrosion flag.,Project,
+Design maximum temperature,47,INFO,Explicit maximum temperature if entered; otherwise ambient.,Project,
+Design minimum temperature,-0.6,INFO,Explicit minimum temperature if entered; otherwise ambient.,Project,
+EMI/RFI shielding requested?,No,INFO,Solid-bottom steel with solid cover is an Eaton-documented EMI/RFI shielding approach.,Project,
+AUTO tray material,Aluminum,PASS,Default: aluminum for most installations; 316 SS for acid/chlorine or highly corrosive service; EMI/RFI uses steel/stainless path.,Eaton B-Line design considerations,Aluminum is source-supported as a strong general-purpose default; stainless is reserved for severe chemical exposure.
+AUTO finish / material grade,Mill Finish / Bare Aluminum,PASS,"Material/finish is derived, not user-selected.",Eaton B-Line catalog,
+Temperature suitability,PASS,PASS,Aluminum source range: -129°C to 93°C. HDG steel source range: -29°C to 260°C.,Eaton B-Line design considerations,Exact selected-product temperature suitability remains a final product check.
+Environment suitability,PASS,PASS,Pregalvanized: indoor. HDG: indoor/outdoor non-saline. Aluminum: broad indoor/outdoor incl marine; 316 SS: severe acids/chlorines.,Eaton B-Line design considerations,HDG is not auto-selected for saline service.
+STEP 5 RELEASE,PASS,PASS,,Step 5,
